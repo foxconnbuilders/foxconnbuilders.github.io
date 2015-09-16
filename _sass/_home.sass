@@ -1,0 +1,36 @@
+#product-list
+  margin: 0
+  width: 100%
+  padding: 15px
+  .vertical-align-products
+    [class^="col-"], [class*=" col-"]
+      //padding: 10px
+      a
+        padding: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        &.hvr-glow
+          vertical-align: middle
+          -webkit-transform: translateZ(0)
+          transform: translateZ(0)
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+          -webkit-backface-visibility: hidden
+          backface-visibility: hidden
+          -moz-osx-font-smoothing: grayscale
+          -webkit-transition-duration: 0.3s
+          transition-duration: 0.3s
+          -webkit-transition-property: box-shadow
+          transition-property: box-shadow
+          &:hover, &:focus, &:active
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6)
+        .product
+          padding: 5px
+
+@media (max-width: $screen-sm-max)
+  #product-list
+    padding: 50px
+    .product
+      img
+        height: 200px

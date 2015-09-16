@@ -4,10 +4,39 @@
     {% include head.html %}
 
     <body>
-        {% include navigation-bar.html %}
-        <div class="container">
-            {{ content }}
-        </div>
-        {% include footer.html %}
+    {% include navigation-bar.html %}
+    {{ content }}
+    {% include footer.html %}
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var productList = $('#product-list');
+
+            if(mobileCheck())
+                productList.find('.col-md-3').height(($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight())));
+
+            $(window).on('resize', function(e) {
+                if (mobileCheck()){
+                    resizeProducts();
+                }
+                else{
+                    productList.find('.col-md-3').css("height", "");
+                }
+            });
+
+            function resizeProducts(){
+                productList.find('.col-md-3').height(($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight())));
+            }
+
+            function mobileCheck(){
+                if ($(window).width() > 991){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        });
+    </script>
     </body>
 </html>
