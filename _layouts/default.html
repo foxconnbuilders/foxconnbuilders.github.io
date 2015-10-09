@@ -11,30 +11,20 @@
     <script>
         $(document).ready(function() {
             var productList = $('#product-list');
-
-            if(mobileCheck())
-                productList.find('.col-md-3').height(($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight())));
+            var outerHeight = resizeProducts();
+            productList.find('.outer').height(outerHeight);
 
             $(window).on('resize', function(e) {
-                if (mobileCheck()){
-                    resizeProducts();
-                }
-                else{
-                    productList.find('.col-md-3').css("height", "");
-                }
+                resizeProducts();
             });
 
             function resizeProducts(){
-                productList.find('.col-md-3').height(($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight())));
-            }
-
-            function mobileCheck(){
-                if ($(window).width() > 991){
-                    return true;
-                }
-                else{
-                    return false;
-                }
+//                outerHeight = ($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+                outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+                productList.find('.outer').height(outerHeight);
+                productList.find('.left .row').first().height(outerHeight * 0.60);
+                productList.find('.left .row').last().height(outerHeight * 0.40);
+                productList.find('.right .row').height(outerHeight / 2);
             }
         });
     </script>
