@@ -1,0 +1,217 @@
+.border-radius-mixin (@radius: 0) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.background-image-mixin(@position,@color1,@color2){
+  background-image: -webkit-linear-gradient(@position, @color1, @color2);
+  background-image: -moz-linear-gradient(@position, @color1, @color2);
+  background-image: -ms-linear-gradient(@position, @color1, @color2);
+  background-image: -o-linear-gradient(@position, @color1, @color2);
+}
+
+.transition(@property,@duration,@style,@delay:0){
+  -webkit-transition:-webkit-transform @property @duration @style @delay;
+  -moz-transition: -moz-transform @property @duration @style @delay;
+  -o-transition: -o-transform @property @duration @style @delay;
+  -ms-transition: -ms-transform @property @duration @style @delay;
+  transition: @property @duration @style @delay;
+}
+
+.radius(@value){
+  -webkit-border-top-left-radius:@value;
+  -moz-border-radius-topleft:@value;
+  border-top-left-radius:@value;
+  -webkit-border-top-right-radius:@value;
+  -moz-border-radius-topright:@value;
+  border-top-right-radius:@value;
+  -webkit-border-bottom-right-radius:@value;
+  -moz-border-radius-bottomright:@value;
+  border-bottom-right-radius:@value;
+  -webkit-border-bottom-left-radius:@value;
+  -moz-border-radius-bottomleft:@value;
+  border-bottom-left-radius:@value;
+}
+
+.foxconn-button{
+//  -moz-box-shadow:inset 0px 1px 3px 0px #fce2c1;
+//  -webkit-box-shadow:inset 0px 1px 3px 0px #fce2c1;
+//  box-shadow:inset 0px 1px 3px 0px #fce2c1;
+//  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+//  background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+  background-color:#fa9927;
+}
+
+.foxconn-button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+  background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+  background-color:#fb9e25;
+}
+
+.barousel
+{
+  position:relative;
+  margin-bottom:0px;
+  //  background:url(../images/bg_banner.gif) repeat 0 0;
+  width:100%;
+  min-height:600px;
+  border-top:3px solid #000;
+}
+
+.barousel_image
+{
+  position:absolute;
+  z-index:10;
+  width: 100%;
+  height:500px;
+}
+
+.barousel_image img
+{
+  position:absolute;
+  display:none;
+  width: 100%;
+  height: auto;
+}
+
+.barousel_image img.default
+{
+  display:block;
+}
+
+.barousel_image img.current
+{
+  z-index:10;
+}
+
+.barousel_image img.previous
+{
+  z-index:5;
+}
+
+.barousel_content{
+  position:absolute;
+  padding: 0 10px 20px;
+  z-index:50;
+  background-color: rgba(12, 12, 12, 0.2);
+  color:#fff;
+  width: 50%;
+
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  text-align: center;
+
+  h2{
+    font-family: 'open-sans-light', sans-serif;
+    font-size: 40px;
+    span{
+      font-family: 'open-sans-semibold', sans-serif;
+    }
+  }
+
+  p{
+    font-size: 25px;
+  }
+}
+
+.barousel_content div
+{
+  display:none;
+}
+
+.barousel_content div.default
+{
+  display:block;
+}
+
+.barousel_content a,
+.barousel_content a:hover
+{
+  color:#fa9927;
+  background-color:transparent !important;
+}
+
+  .barousel_nav
+{
+  position:absolute;
+  padding:4px 10px 0px 0px;
+  height:30px;
+  background: rgba(0, 0, 0, 0.40);
+  z-index:20;
+  width: 100%;
+  top:0;
+}
+
+.barousel_nav .counter
+{
+  float:right;
+  font-size:0.75em;
+  color:#fff;
+  margin:3px 5px 0 0;
+}
+
+.barousel_nav ul
+{
+  float:right;
+  padding:0;
+  margin:0;
+}
+
+.barousel_nav li
+{
+  float:left;
+  padding-left:3px;
+  font-size:0;
+  line-height:0;
+  list-style:none;
+}
+
+.barousel_nav li a
+{
+  display:block;
+  width:25px;
+  height:20px;
+  background-color:#4d4d4d;
+  font-size:0;
+  line-height:0;
+  text-decoration:none;
+}
+
+.barousel_nav li a:hover
+{
+  background-color:#6e6e6e;
+}
+
+.barousel_nav li a.current
+{
+  background-color:#fa9927;
+}
+
+.barousel_nav li.prev a
+{
+  background-color:#fa9927;
+  background-image:url(../img/barousel_link_previous.gif);
+  background-repeat:no-repeat;
+  background-position:0 0;
+}
+
+.barousel_nav li.next a
+{
+  background-color:#fa9927;
+  background-image:url(../img/barousel_link_next.gif);
+  background-repeat:no-repeat;
+  background-position:0 0;
+}
+
+.barousel img.ajax_loader
+{
+  display:none;
+  position:absolute;
+  z-index:99;
+  top:70px;
+  left:135px;
+}
