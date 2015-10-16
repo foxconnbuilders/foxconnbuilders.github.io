@@ -1,0 +1,22 @@
+<div id="features-section" class="container-fluid">
+    <div class="row">
+        <div class="features-banner">
+            <h1 class="header-title">FEATURES</h1>
+        </div>
+        {% for features in site.data.features %}
+        <div class="col-lg-12 product-container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-content-container">
+                        <h1 class="product-title">{{ features.title }}</h1>
+                        <p class="product-description">{{ features.description }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="product-image" src="{{ features.image }}"/>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

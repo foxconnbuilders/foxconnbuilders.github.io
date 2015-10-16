@@ -1,5 +1,29 @@
 ---
 layout: default
+title: Home
+css: /css/home.css
+javascripts: >
+  <script>
+    $(document).ready(function() {
+      var productList = $('#product-list');
+      var outerHeight = resizeProducts();
+      productList.find('.outer').height(outerHeight);
+
+      $(window).on('resize', function(e) {
+        resizeProducts();
+      });
+
+      function resizeProducts(){
+  //                outerHeight = ($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+        outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+        productList.find('.outer').height(outerHeight);
+        productList.find('.left .row').first().height(outerHeight * 0.60);
+        productList.find('.left .row').last().height(outerHeight * 0.40);
+        productList.find('.right .row').height(outerHeight / 2);
+      }
+    });
+  </script>
+
 ---
 
 <div id="product-list">
@@ -28,6 +52,7 @@ layout: default
               <!--</div>-->
             </div>
           </div>
+          <a class="product-link" href="/shutter/"></a>
         </div>
         <div class="col-md-6 product effect-oscar-hide" style="background-image: url(/images/home/doors.JPG);">
           <div class="center-container caption">

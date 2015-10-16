@@ -13,3 +13,7 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+collections:
+  product:
+    output: true

@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include head.html %}
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+    <link rel="stylesheet" href="{{ page.css }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+</head>
     <body>
     {% include navigation-bar.html %}
     {{ content }}
     {% include footer.html %}
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var productList = $('#product-list');
-            var outerHeight = resizeProducts();
-            productList.find('.outer').height(outerHeight);
-
-            $(window).on('resize', function(e) {
-                resizeProducts();
-            });
-
-            function resizeProducts(){
-//                outerHeight = ($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
-                outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
-                productList.find('.outer').height(outerHeight);
-                productList.find('.left .row').first().height(outerHeight * 0.60);
-                productList.find('.left .row').last().height(outerHeight * 0.40);
-                productList.find('.right .row').height(outerHeight / 2);
-            }
-        });
-    </script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    {{ page.javascripts }}
     </body>
 </html>
