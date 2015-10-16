@@ -2,7 +2,7 @@ var $height = $(window).height();
 var $width = $(window).width();
 
 $(document).ready( function() {
-
+    var navbarBrand = $('#nav-bar .brand img');
     $('#barousel-foxconn').barousel({
         navType: 2
     });
@@ -12,6 +12,10 @@ $(document).ready( function() {
     $(document).on('click','#learn-button',function(){
         event.preventDefault();
         $('html,body').animate({scrollTop: $('.product').offset().top - 80},'slow');
+    });
+
+    navbarBrand.on('click', function(){
+        window.location = '/';
     });
 });
 
@@ -25,7 +29,8 @@ $(window).on('load',function(){
     $('.project').fadeIn();
     $('.contact').fadeIn();
     $('.subMenu').smint({
-        'scrollSpeed' : 1000
+        'scrollSpeed' : 1000,
+        'mySelector': '#nav-bar'
     });
     $('#nav-bar').fadeIn();
     $('#learn').fadeIn();
