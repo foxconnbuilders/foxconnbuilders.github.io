@@ -7,13 +7,17 @@ wide: 3.5
 height: 5
 colors: 
     - title: white
-      color: 33ff33
+      color: ffffff
       
     - title: ivory
-      color: 00ff00
+      color: f9f4dd
     
-    - title: metallic gray
-      color: 333333
+    - title: m. gray
+      color: cccccc
+      
+    - title: brown
+      color: 8b572a
+
    
 outside: /images/assets/a56-outside.jpg
 inside: /images/assets/inside.jpg

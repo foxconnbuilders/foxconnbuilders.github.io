@@ -7,13 +7,17 @@ wide: 2
 height: 3.5
 colors: 
     - title: white
-      color: 333322
+      color: ffffff
       
     - title: ivory
-      color: 00ff00
+      color: f9f4dd
     
-    - title: metallic gray
-      color: 333333
+    - title: m. gray
+      color: cccccc
+      
+    - title: brown
+      color: 8b572a
+     
 outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445000359/shutter/product/inside.jpg
 inside: /images/assets/b40-inside.jpg
 ---
