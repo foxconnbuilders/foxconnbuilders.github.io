@@ -15,7 +15,7 @@ foxconn.videoButton = function(){
     videoTopButton.on('click', function(){
         videoTopContainer.addClass('video-on-show');
         videoTopMenuContainer.css('display','none');
-        videoTopContainer.append('<iframe src="https://player.vimeo.com/video/142602514?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> ');
+        videoTopContainer.append('<iframe src="https://player.vimeo.com/video/143051773?autoplay=1" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> ');
     });
 
     videoBottomButton.on('click', function(){
