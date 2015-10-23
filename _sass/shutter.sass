@@ -47,50 +47,53 @@ body
     -ms-border-radius: 0
     .product-menu-container
       height: inherit
-      .navbar-header
+      .row
         height: inherit
-        .header-title
-          color: white
-          float: left
-          margin: 0
-          padding-left: 65px
-          font-size: 1.5em
-          font-family: 'MicroSquare-Regular'
-          position: relative
-          top: 50%
-          transform: translateY(-50%)
-          -webkit-transform: translateY(-50%)
-          -moz-transform: translateY(-50%)
-          -o-transform: translateY(-50%)
-          -ms-transform: translateY(-50%)
-        .navbar-menu
-          float: right
-          margin-bottom: 0
-          position: relative
-          top: 50%
-          transform: translateY(-50%)
-          -webkit-transform: translateY(-50%)
-          -moz-transform: translateY(-50%)
-          -o-transform: translateY(-50%)
-          -ms-transform: translateY(-50%)
-          .navbar-item
-            margin: 0 30px
-            display: inline-block
-            a
-              font-size: 1.2em
-              text-decoration: none
-              color: white
+        .navbar-header
+          height: inherit
+          .header-title
+            color: white
+            float: left
+            margin: 0
+            padding-left: 65px
+            font-size: 1.2em
+            font-family: 'Neue-Frutiger-Heavy'
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+          .navbar-menu
+            float: right
+            margin-bottom: 0
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            .navbar-item
+              margin: 0 30px
+              display: inline-block
+              a
+                font-size: 1.2em
+                text-decoration: none
+                color: white
   .product-container
     margin: 3% 0px
     .product-left
       .product-image
         width: 100%
     .product-right
-      //.product-title
+      .product-title
+        font-size: 2.5em
       .product-size
         margin: 7% 2%
         .size-wide
-          font-size: 1.3em
+          font-size: 1.2em
         .size-height
           font-size: 1.3em
       .product-color
@@ -102,7 +105,7 @@ body
             margin: 5px 10px
             display: inline-block
             .circle-color
-              border: 1px solid #000000
+              border: 1px solid #ABABAB
               width: 50px
               height: 50px
               -moz-border-radius: 50px
@@ -198,8 +201,8 @@ body
       padding-left: 65px
       color: white
       margin: 0
-      font-size: 1.5em
-      font-family: 'Neue-Frutiger-Book'
+      font-size: 1.2em
+      font-family: 'Neue-Frutiger-Heavy'
       position: relative
       top: 50%
       transform: translateY(-50%)
@@ -214,9 +217,41 @@ body
       max-width: 80%
       margin: 0 auto
       .product-title
-        font-size: 3.5em
+        font-size: 2.5em
       .product-description
-        font-size: 1.3em
-        line-height: 44px
+        font-size: 1.2em
+        line-height: 35px
     .product-image
       width: 90%
+
+
+@media (max-width: $screen-lg)
+  #features-section
+    .product-container
+      .product-content-container
+        .product-title
+          font-size: 2.5em
+        .product-description
+          font-size: 1.2em
+
+@media (max-width: $screen-md-max)
+  #product-section
+    .product-container
+      .product-right
+        .product-title
+          h1
+            margin: 0
+        .product-size
+          margin: 4.6% 2%
+          .size-height
+            font-size: 1.1em
+          .size-wide
+            font-size: 1.1em
+        .product-color
+          margin: 0% 2% 0%
+          ul
+            margin-bottom: 0
+
+
+@media (max-width: $screen-sm-max)
+
