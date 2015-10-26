@@ -1,0 +1,17 @@
+- name: Home
+  url: /
+
+- name: What's New
+  url: /whatsnew
+
+- name: Products
+  url: /products/#!/
+  slugUrl:
+
+- name: Store
+  url: /store/
+
+- name: Contact
+  url: /contact/
+
+

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" id="icon-transition" class="navbar-toggle toggle-menu menu-right" data-toggle="collapse" data-target="#navbar-right-collapse">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img class="brand-logo" src="/images/logo.png"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar-right-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {% for navbarMenu in site.data.navbar %}
+                <li class="navbar-menu">
+                    <a href="{{navbarMenu.url}}">{{ navbarMenu.name | upcase }}</a>
+                </li>
+                {% if navbarMenu.name == "Products" %}
+                <ul class="category-menu-container hidden-lg hidden-md">
+                    {% for categoryMenu in site.data.categories %}
+                    <li class="category-menu">
+                        <a href="{{ categoryMenu.url }}">- {{ categoryMenu.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

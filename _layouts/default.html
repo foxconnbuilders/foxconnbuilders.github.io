@@ -14,11 +14,19 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
     <body>
-    {% include navigation-bar.html %}
+    {% include navbar.html %}
     {{ content }}
     {% include footer.html %}
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/jPushMenu.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
     {{ page.javascripts }}
     </body>
 </html>
