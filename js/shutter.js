@@ -1,6 +1,15 @@
 var foxconn = foxconn || {};
 foxconn.shutterFunction = function() {
     foxconn.videoButton();
+    //foxconn.productMenuOnClick();
+};
+
+foxconn.productMenuOnClick = function(){
+   var productMenu = $('.navbar-item');
+    productMenu.on('click', function () {
+       $(this).addClass('active');
+        productMenu.not(this).removeClass('active');
+    });
 };
 
 foxconn.videoButton = function(){
