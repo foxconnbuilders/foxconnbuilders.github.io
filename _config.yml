@@ -16,4 +16,5 @@ markdown: kramdown
 
 collections:
   product:
+    permalink: /product/:path/
     output: true
