@@ -38,6 +38,7 @@ body
 #product-section
   position: relative
   .navbar
+    border: 0
     height: 50px !important
     background-color: #FB942B
     border-radius: 0
@@ -69,19 +70,26 @@ body
             float: right
             margin-bottom: 0
             position: relative
-            top: 50%
-            transform: translateY(-50%)
-            -webkit-transform: translateY(-50%)
-            -moz-transform: translateY(-50%)
-            -o-transform: translateY(-50%)
-            -ms-transform: translateY(-50%)
+            //top: 50%
+            //transform: translateY(-50%)
+            //-webkit-transform: translateY(-50%)
+            //-moz-transform: translateY(-50%)
+            //-o-transform: translateY(-50%)
+            //-ms-transform: translateY(-50%)
             .navbar-item
-              margin: 0 30px
+              padding: 13px 0px
               display: inline-block
+              transition: background-color 300ms ease
+              margin: 0 -2px
+              &:hover,
+              &.active
+                background-color: #d35400
               a
-                font-size: 1.2em
+                font-size: 17px
                 text-decoration: none
                 color: white
+                padding: 13px 30px
+
   .product-container
     margin: 3% 0px
     .product-left
