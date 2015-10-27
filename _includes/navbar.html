@@ -15,6 +15,9 @@
 
         <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar-right-collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <span class="navbar-title">OUR PRODUCTS</span>
+                </li>
                 {% for navbarMenu in site.data.navbar %}
                 <li class="navbar-menu">
                     <a href="{{navbarMenu.url}}">{{ navbarMenu.name | upcase }}</a>
