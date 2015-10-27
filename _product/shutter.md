@@ -83,8 +83,8 @@ product:
         - title: brown
           color: 8b572a 
             
-      outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445000359/shutter/product/inside.jpg
-      inside: /images/assets/b40-inside.jpg
+      outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445955371/shutter/b40_outside.png
+      inside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445955368/shutter/b40_inside.jpg
 
 
 productVideoImg: http://res.cloudinary.com/dqprvzepv/image/upload/v1444994042/shutter/video-cover.jpg
