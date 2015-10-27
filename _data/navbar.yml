@@ -1,17 +1,16 @@
-- name: Home
+- name: Flood Gate
   url: /
 
-- name: What's New
+- name: Louvers
   url: /whatsnew
 
-- name: Products
-  url: /products/#!/
-  slugUrl:
+- name: Fire-rated Doors
+  url: #
 
-- name: Store
-  url: /store/
+- name: Automated Security
+  url: /product/shutter/
 
-- name: Contact
-  url: /contact/
+- name: Shutter
+  url: #
 
 
