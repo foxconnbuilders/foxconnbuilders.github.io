@@ -4,6 +4,7 @@ bigTitle: "AUTOMATED"
 smallTitle: "Security Shutter"
 description: "Your Smart Solution Against Theft & Typhoon"
 productCategoryName: "Shutter Slats"
+coverBanner: http://res.cloudinary.com/dqprvzepv/image/upload/v1444980718/shutter/hero-img.jpg
 
 productMenu:
   - id: 1

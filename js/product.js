@@ -4,6 +4,8 @@ foxconn.shutterFunction = function() {
     //foxconn.productMenuOnClick();
 };
 
+
+
 foxconn.productMenuOnClick = function(){
    var productMenu = $('.navbar-item');
     productMenu.on('click', function () {

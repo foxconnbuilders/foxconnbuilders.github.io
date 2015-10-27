@@ -1,0 +1,21 @@
+<div id="product-floodgate" class="container">
+    <div class="col-lg-6 product-left-container">
+        <div class="flexslider">
+            <ul class="slides">
+                {% assign sortedSliderImage = page.productSlider | sort:"id" %}
+                {% for sliderImage in sortedSliderImage %}
+                <li class="slider-item" data-thumb="{{ sliderImage.image }}">
+                    <img src="{{ sliderImage.image }}" />
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-6 product-right-container">
+        <h3 id="product-title">{{ page.bigTitle }} <span id="product-title-small">{{ page.smallTitle }}</span></h3>
+        <h4> {{ page.certified }} </h4>
+        {% for productDescription in page.productDescription %}
+        <p class="product-description">{{ productDescription.description }}</p>
+        {% endfor %}
+    </div>
+</div>

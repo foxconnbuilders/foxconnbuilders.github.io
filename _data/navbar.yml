@@ -1,8 +1,8 @@
 - name: Flood Gate
-  url: /
+  url: /product/floodgate/
 
 - name: Louvers
-  url: /whatsnew
+  url: #
 
 - name: Fire-rated Doors
   url: #

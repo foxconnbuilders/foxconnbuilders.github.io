@@ -3,7 +3,6 @@ body
   font-family: 'Neue-Frutiger-Light'
 
 #cover-section
-  background: url('http://res.cloudinary.com/dqprvzepv/image/upload/v1444980718/shutter/hero-img.jpg')
   background-size: cover
   height: 100vh
   .row
@@ -34,7 +33,7 @@ body
     #cover-text
       color: #0B7BB5
       font-size: 1.3em
-
+//
 #product-section
   position: relative
   .navbar
@@ -127,6 +126,70 @@ body
         .product-sample-image
           width: 100%
           height: 162px
+
+//floodgate
+#product-floodgate
+  .product-left-container
+    margin: 3% 0 5%
+    .flexslider
+      margin: 0
+      .flex-control-thumbs
+        margin-top: 5%
+        overflow: visible
+        li
+          img
+            opacity: 1
+            &.flex-active
+              transform: scale(1.2)
+              -webkit-transform: scale(1.2)
+              -moz-transform: scale(1.2)
+              -o-transform: scale(1.2)
+              -ms-transform: scale(1.2)
+      .flex-direction-nav
+        .flex-nav-prev
+          a
+            background: url('/images/assets/arrows.png')
+            background-size: 90px
+            top: 50%
+            transform: translateY(-50%)
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            &:before
+              display: none
+        .flex-nav-next
+          a
+            background: url('/images/assets/arrows.png')
+            background-position-x: 40px
+            background-size: 90px
+            top: 50%
+            transform: translateY(-50%)
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            &:before
+              display: none
+  .product-right-container
+    margin-top: 3%
+    #product-title
+      font-size: 3em
+      color: black
+      text-transform: uppercase
+      font-family: 'MicroSquare-Regular'
+      #product-title-small
+        color: #000
+        font-family: 'Neue-Frutiger-Light'
+        text-transform: capitalize
+        margin: 20px 0 0
+    .product-description
+      margin: 0 0 40px
+      letter-spacing: 1px
+      color: black
+      font-size: 16px
+      line-height: 30px
+      font-family: 'Neue-Frutiger-Book'
 
 .video-section
   background-color: black
