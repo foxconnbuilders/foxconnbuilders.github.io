@@ -1,8 +1,14 @@
 @import "navbar"
 @import "footer"
 
+html
+  margin: 0
+  padding: 0
+  position: relative
+  min-height: 100%
+
 body
-  padding-top: 81px
+  margin: 81px 0 60px //this will depends on footer height
   font-family: "Neue-Frutiger-Book", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 @media (min-width: $screen-md-min)

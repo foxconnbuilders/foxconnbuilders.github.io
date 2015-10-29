@@ -1,24 +1,22 @@
 #footer
-  padding: 10px 20px
+  position: absolute
+  bottom: 0
   color: #ffffff
   background-color: #4a4a4a
-  #footer-contact
-    padding-left: 1em
-  .contact
-    display: flex
-
-@media (min-width: $screen-md-min)
-  #footer
-    height: 60px
-    .container
-      height: 100%
-      .row
-        height: 100%
-
-@media (max-width: $screen-md-max)
-  #footer
-    //padding: 10px 0
-    [class*="col-"]
-      padding: 5px 20px
+  height: 60px
+  width: 100%
+  .container
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    width: 100% !important
+    padding: 0
     #footer-logo
-      height: 25px
+      height: 20px
+      position: relative
+      margin: 0 auto
+      display: table

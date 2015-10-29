@@ -12,14 +12,24 @@ javascripts: >
       $(window).on('resize', function(e) {
         resizeProducts();
       });
-
-      function resizeProducts(){
-  //                outerHeight = ($(window).height() - ($('nav').outerHeight() + $('#footer').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
-        outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
-        productList.find('.outer').height(outerHeight);
-        productList.find('.left .row').first().height(outerHeight * 0.60);
-        productList.find('.left .row').last().height(outerHeight * 0.40);
-        productList.find('.right .row').height(outerHeight / 2);
+      function resizeProducts() {
+        if ($(window).width() >= 992) {
+          outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+          productList.find('.outer').height(outerHeight);
+          productList.find('.left .row').first().height(outerHeight * 0.60);
+          productList.find('.left .row').last().height(outerHeight * 0.40);
+          productList.find('.left .row .product-item').height(outerHeight * 0.40 );
+          productList.find('.right .row').height(outerHeight / 2);
+        }
+        else if($(window).width() <= 991){
+          outerHeight = ($(window).height() - ($('nav').outerHeight()) - (productList.outerHeight() - productList.find('.row').outerHeight()));
+          productList.find('.outer').first().height(outerHeight * 2);
+          productList.find('.outer').last().height(outerHeight );
+          productList.find('.left .row').first().height(outerHeight * 1);
+          productList.find('.left .row').last().height(outerHeight * 1);
+          productList.find('.left .row .product-item').height(outerHeight * 0.5);
+          productList.find('.right .row').height(outerHeight / 2);
+        }
       }
     });
   </script>
@@ -29,69 +39,52 @@ javascripts: >
 <div id="product-list">
   <div class="row">
     <!-- left side -->
-    <div class="col-md-8 outer left">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 outer left">
       <div class="row">
-        <div class="col-md-12 product" style="background-image: url(/images/home/foxconn-bg.jpg);">
-          <div class="brand-image-container">
-            <div class="center-container">
-              <div class="center-content">
-                <img src="/images/home/foxconn-logo.png" alt="" class="img-responsive brand-image">
-              </div>
-            </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 product" style="background-image: url('http://res.cloudinary.com/dqprvzepv/image/upload/v1446025437/background_nhblkr.png');">
+          <div class="center-content">
+            <img src="/images/home/foxconn-logo.png" alt="" class="img-responsive brand-image">
+            <p class="product-description">Foxconn Builders, Inc. markets only the highest grade Aluminum 6063-T5 product fully costumizable to end user preference without compromising their aesthetic, security and protection needs </p>
           </div>
           <div class="overlay"></div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 product effect-oscar-hide" style="background-image: url(/images/home/shutter.JPG);">
-          <div class="center-container caption">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product-item product effect-oscar-hide" style="background-image: url('/images/home/shutter.JPG');">
+          <a class="product-link" href="/product/shutter/">
             <div class="center-content">
-              <h4>AUTOMATED SECURITY SHUTTER</h4>
-              <!--<div class="view-more">-->
-                <!--<span>Coming Soon</span>-->
-              <!--</div>-->
+              <h4 class="product-title">AUTOMATED SECURITY SHUTTER</h4>
             </div>
-          </div>
-          <a class="product-link" href="/product/shutter/"></a>
+          </a>
         </div>
-        <div class="col-md-6 product effect-oscar-hide" style="background-image: url(/images/home/doors.JPG);">
-          <div class="center-container caption">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product-item product effect-oscar-hide" style="background-image: url('/images/home/doors.JPG');">
+          <a class="product-link" href="#">
             <div class="center-content">
-              <h4>FIRE-RATED DOORS</h4>
-              <!--<div class="view-more">-->
-                <!--<span>Coming Soon</span>-->
-              <!--</div>-->
+              <h4 class="product-title">FIRE-RATED DOORS</h4>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- right side -->
-    <div class="col-md-4 outer right">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 outer right">
       <div class="row">
-        <div class="col-md-12 product effect-oscar-hide" style="background-image: url(/images/home/floodgate.jpg);">
-          <div class="center-container caption">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 product effect-oscar-hide" style="background-image: url('/images/home/floodgate.jpg');">
+          <a class="product-link" href="/product/floodgate/">
             <div class="center-content">
-              <h4>FLOOD GATE</h4>
-              <!--<div class="view-more">-->
-              <!--<span>Coming Soon</span>-->
-              <!--</div>-->
+              <h4 class="product-title">FLOOD GATE</h4>
             </div>
-          </div>
-          <a class="product-link" href="/product/floodgate/"></a>
+          </a>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 product effect-oscar-hide" style="background-image: url(/images/home/louver.jpg);">
-          <div class="center-container caption">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 product effect-oscar-hide" style="background-image: url('/images/home/louver.jpg');">
+          <a class="product-link" href="#">
             <div class="center-content">
-              <h4>LOUVERS</h4>
-              <!--<div class="view-more">-->
-                <!--<span>Coming Soon</span>-->
-              <!--</div>-->
+              <h4 class="product-title">LOUVERS</h4>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
