@@ -104,11 +104,11 @@ feature:
       description: "Air vents are situated on the slats to facilitate proper ventilation as the client pleases."
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1444989772/shutter/ventilation.png
     
-    - title: Strong
-      description: "Made from Aluminum Alloy. Comes with patented hook system that can withstand pressure up to 379 kg/sqm."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1445832299/shutter/strong.png
+    - title: Protected from Strong Winds
+      description: "The shutter is made of aluminium alloy and with its patented hook system, it is sure to withstand wind pressure brought about by typhoons and unpleasant weather."
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131019/strong_u1xe5y.png
     
-    - title: Heat insulation
+    - title: Heat Insulation
       description: "The shutter reduces heat gain in the summer. Effectively keeping the ideal room temperature for your family"
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446096196/heatInsulation_cogj18.png
     
@@ -116,5 +116,12 @@ feature:
       description: "Outside noise is reduced by the shutter, allowing for a conducive space to go about your business—whether sleeping or working— without interruption."
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446096085/soundInsulation_o95voo.png
     
-   
+    - title: Silent type Tubular Motor
+      description: "Its long-life and silent-type Tubular Motor includes a Thermal Protection System that has assed the following accreditations and certifications: A. CE and UL  B.German TUV  C.  ISO9001."
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131005/tubular_igttyf.png
+    
+    - title: Remote and Master Controls
+      description: "You are able to control your shutters from a distance with a choice of getting either a remote or master control."
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131024/remoteControl_nmuauj.png
+    
 ---
