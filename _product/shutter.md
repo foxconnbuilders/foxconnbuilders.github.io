@@ -94,7 +94,7 @@ productVideoButton: http://res.cloudinary.com/dqprvzepv/image/upload/v1444994189
 feature:
     - title: Lighting
       description: "The automated shutter can be controlled to open and close to let light in and out of the room as the client pleases. Also lessen the amount of UV rays to prevent damage to curtains, furniture and wooden floors."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446095717/lighting_qy8zzo.png
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446117359/lighting_gaipj9.png
     
     - title: Security
       description: "The shutter cannot be pried open forcefully by outside force once closed. The patented hooking system also prevents derailing of slats from strong winds protecting you from typhoons."
