@@ -9,6 +9,11 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="stylesheet" href="/css/product.css">
+
+    {% if page.url == "/product/shutter/" %}
+        <link rel="stylesheet" href="/css/responsive-tabs.css">
+    {% endif %}
+
     {% if page.url == "/product/floodgate/" %}
         <link rel="stylesheet" href="/css/flexslider.css">
     {% endif %}
@@ -23,6 +28,8 @@
 {% if page.url == "/product/shutter/" %}
     {% include product/shutter/product.html %}
     {% include product/video-top.html %}
+    {% include product/feature.html %}
+    {% include product/video-bottom.html %}
 {% endif %}
 
 <!--for product floodgate-->
@@ -30,8 +37,7 @@
     {% include product/floodgate/product.html %}
 {% endif %}
 
-{% include product/feature.html %}
-{% include product/video-bottom.html %}
+
 {% include footer.html %}
 
 <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
@@ -39,9 +45,10 @@
 <script type="text/javascript" src="/js/jPushMenu.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/product.js"></script>
+
 {% if page.url == "/product/floodgate/" %}
     <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
-    <script>
+    <script type="text/javascript">
         $(window).load(function() {
             $('.flexslider').flexslider({
                 animation: "slide",
@@ -53,7 +60,19 @@
         });
     </script>
 {% endif %}
-<script>
+
+{% if page.url == "/product/shutter/" %}
+    <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#responsiveTabs').responsiveTabs({
+                startCollapsed: 'accordion'
+            });
+        });
+    </script>
+{% endif %}
+
+<script type="text/javascript">
     $(document).ready(function(){
         $('.toggle-menu').jPushMenu({closeOnClickLink: false});
         $('.dropdown-toggle').dropdown();
