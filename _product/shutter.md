@@ -117,7 +117,7 @@ feature:
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446096085/soundInsulation_o95voo.png
     
     - title: Silent type Tubular Motor
-      description: "Its long-life and silent-type Tubular Motor includes a Thermal Protection System that has assed the following accreditations and certifications: A. CE and UL  B.German TUV  C.  ISO9001."
+      description: "Its long-life and silent-type Tubular Motor includes a Thermal Protection System that has the following accreditations and certifications: A. CE and UL  B.German TUV  C.  ISO9001."
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131005/tubular_igttyf.png
     
     - title: Remote and Master Controls

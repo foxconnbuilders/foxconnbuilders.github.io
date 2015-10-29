@@ -46,7 +46,7 @@ nav
       .navbar-nav
         height: auto !important
         float: none !important
-        margin: 32% 0% 15% 8%
+        margin: 30% 0% 15% 8%
         display: table
         li
           transform: none
@@ -55,7 +55,7 @@ nav
           float: none
           margin-bottom: 11px
           &:nth-child(1)
-            margin-bottom: 30px
+            margin-bottom: 10px
           .navbar-title
             font-family: "Neue-Frutiger-Heavy"
             font-size: 1.5em
@@ -74,18 +74,21 @@ nav
           font-family: "Neue-Frutiger-Heavy"
           font-size: 1.5em
           color: #fff
-          margin-bottom: 30px
-        .contact-item-icon
-          display: block
-          font-size: 20px
-          color: white
-          margin: 10px 0
-        .contact-item
-          display: block
-          color: white
-          a
+          margin-bottom: 20px
+        li
+          &:last-child
+            max-width: 90%
+          .contact-item-icon
+            display: block
+            font-size: 20px
             color: white
-            text-decoration: none
+            margin: 10px 0
+          .contact-item
+            display: block
+            color: white
+            a
+              color: white
+              text-decoration: none
 
 
     .navbar-collapse.collapse
