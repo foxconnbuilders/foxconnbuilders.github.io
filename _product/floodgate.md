@@ -40,7 +40,7 @@ feature:
     
     - title: Height at your preference
       description: "The Foxconn Floodgate has a minimum height of half a meter (0.5m) and a maximum height of three meters (3.0m). With our patented multi-stage locking design, the floodgate can be installed in sections or installments according to flood level so as not to affect entrance and exit routes for both people and vehicles alike."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446109489/floodGate-03_a0odbz.png
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446118732/floodGate_yit6dz.png
     
     - title: Tough from ground up
       description: "The floodgate panel is manufactured with high quality 6063-T5 aluminum alloy. The thickness of waterproof panel is made so that it can sustain more impact strength from flood waters. The floodgate panels also use high quality rubber gaskets from Japan. Not only does this keep the floodgate 100% watertight, it also solves the problem of rubber degumming from soaking in flood water."
