@@ -123,5 +123,8 @@ feature:
     - title: Remote and Master Controls
       description: "You are able to control your shutters from a distance with a choice of getting either a remote or master control."
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131024/remoteControl_nmuauj.png
-    
+   
+    - title: Safety Function
+      description: "With an optional auto-reverse safety function, FoxConn’s automated shutter keeps your kids and properties safe. Whenever an object is positioned under the shutter, you could choose to set it to auto-reverse when it touches a barrier."
+      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131009/reverseFunction_xoaij5.png
 ---
