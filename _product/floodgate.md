@@ -45,5 +45,7 @@ feature:
     - title: Strong
       description: "Made from Aluminum Alloy. Comes with patented hook system that can withstand pressure up to 379 kg/sqm."
       image: http://res.cloudinary.com/dqprvzepv/image/upload/v1445832299/shutter/strong.png
+      
+      
 
 ---

@@ -1,5 +1,5 @@
 body
-  margin: -79px 0 0
+  margin: 80px 0 60px
   font-family: 'Neue-Frutiger-Light'
 
 #cover-section
@@ -32,64 +32,40 @@ body
     #cover-text
       color: #0B7BB5
       font-size: 1.3em
-//
+
 #product-section
   position: relative
-  .navbar
-    border: 0
-    height: 50px !important
-    background-color: #FB942B
-    border-radius: 0
-    -webkit-border-radius: 0
-    -mozborder-radius: 0
-    -o-border-radius: 0
-    -ms-border-radius: 0
-    .product-menu-container
-      height: inherit
-      .row
-        height: inherit
-        .navbar-header
-          height: inherit
-          .header-title
-            color: white
-            float: left
-            margin: 0
-            padding-left: 65px
-            font-size: 1.2em
-            font-family: 'Neue-Frutiger-Heavy'
-            position: relative
-            top: 50%
-            transform: translateY(-50%)
-            -webkit-transform: translateY(-50%)
-            -moz-transform: translateY(-50%)
-            -o-transform: translateY(-50%)
-            -ms-transform: translateY(-50%)
-          .navbar-menu
-            float: right
-            margin-bottom: 0
-            position: relative
-            //top: 50%
-            //transform: translateY(-50%)
-            //-webkit-transform: translateY(-50%)
-            //-moz-transform: translateY(-50%)
-            //-o-transform: translateY(-50%)
-            //-ms-transform: translateY(-50%)
-            .navbar-item
-              padding: 13px 0px
-              display: inline-block
-              transition: background-color 300ms ease
-              margin: 0 -2px
-              &:hover,
-              &.active
-                background-color: #d35400
-              a
-                font-size: 17px
-                text-decoration: none
-                color: white
-                padding: 13px 30px
-
+  margin-bottom: 3%
   .product-container
-    margin: 3% 0px
+    //margin: 3% 0px
+    padding: 0
+    .product-menu
+      background-color: #FB942B
+      height: 50px
+      .header-title
+        color: white
+        margin: 0
+        padding-left: 65px
+        font-size: 1.2em
+        font-family: 'Neue-Frutiger-Heavy'
+        position: relative
+        margin-right: 40px
+        display: inline-block
+      .navbar-item
+        padding: 13px 0px
+        display: inline-block
+        transition: background-color 300ms ease
+        margin: 0 -2px
+        &:hover,
+        &.active
+          background-color: #d35400
+        a
+          font-size: 17px
+          text-decoration: none
+          color: white
+          padding: 13px 30px
+    .mobile-product-title
+      display: none
     .product-left
       .product-image
         width: 100%
@@ -306,6 +282,10 @@ body
           font-size: 1.2em
 
 @media (max-width: $screen-md-max)
+  //body
+  //  margin-top: 80px !important
+  #cover-section
+    height: 35vh
   #product-section
     .product-container
       .product-right
@@ -323,6 +303,79 @@ body
           ul
             margin-bottom: 0
 
-
 @media (max-width: $screen-sm-max)
+  #product-section
+    .product-container
+      text-align: center
+      .product-right
+        .product-title
+          h1
+            margin-top: 20px !important
+        .product-size
+          margin: 4% 0
+          .size-wide
+            font-size: 1.5em
+          .size-height
+            font-size: 1.5em
+        .product-color
+          h4
+            font-size: 1.5em
+
+@media (max-width: $screen-xs-max)
+  
+  .mobile-product-title
+    display: block !important
+    font-family: "Neue-Frutiger-Heavy"
+    text-align: center
+    color: white
+    background-color: #FB942B
+    margin: 0 -15px
+    padding: 10px
+
+  .r-tabs
+    .r-tabs-accordion-title>
+      .r-tabs-anchor
+        display: block
+        padding: 10px
+        background-color: #FB942B
+        color: #fff !important
+        font-weight: bold
+        text-decoration: none
+        font-size: 1.3em
+        text-align: center
+        margin: 0 -15px
+
+    .r-tabs-state-active
+      .r-tabs-anchor
+        background-color: #d35400 !important
+  #product-section
+    .product-container
+      .product-right
+        .product-view
+          .product-sample-image
+            height: auto !important
+
+@media (max-width: 568px)
+  #cover-section
+    height: auto
+    #cover-content
+      top: 0
+      width: 100%
+      padding: 15% 3% !important
+      transform: none !important
+      -webkit-transform: none !important
+      -moz-transform: none !important
+      -o-transform: none !important
+      -ms-transform: none !important
+      #cover-title
+        font-size: 2em !important
+      #cover-text
+        font-size: 1.1em !important
+      
+  #product-section
+    .product-container
+      .product-right
+        .product-title
+          h1
+            font-size: 30px
 

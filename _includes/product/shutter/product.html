@@ -1,65 +1,58 @@
-<div id="product-section" class="container-fluid hidden-sm hidden-xs">
+<div id="product-section" class="container-fluid">
     <div class="row">
-        <nav class="navbar">
-            <div class="container-fluid product-menu-container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <h1 class="header-title">SHUTTER SLATS</h1>
-                        <ul class="navbar-menu tablist">
-                            {% assign sortedProductMenu =  page.productMenu | sort:"id" %}
-                            {% for productMenu in sortedProductMenu %}
-                            <li {% if productMenu.id == 1 %}  class="navbar-item active" {% endif %} class="navbar-item" role="presentation">
-                                <a href="#{{ productMenu.slugLink }}" aria-controls="{{ productMenu.slugLink }}" role="tab" data-toggle="tab">{{ productMenu.title }} SLAT</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <div id="responsiveTabs" class="col-lg-12 col-md-12 product-container" role="tabpanel">
+            <ul class="product-menu tablist">
+                <h1 class="header-title">SHUTTER SLATS</h1>
+                {% assign sortedProductMenu =  page.productMenu | sort:"id" %}
+                {% for productMenu in sortedProductMenu %}
+                <li {% if productMenu.id == 1 %}  class="navbar-item active" {% endif %} class="navbar-item" role="presentation">
+                    <a href="#{{ productMenu.slugLink }}" aria-controls="{{ productMenu.slugLink }}" role="tab" data-toggle="tab">{{ productMenu.title }} SLAT</a>
+                </li>
+                {% endfor %}
+            </ul>
 
-    <div class="col-lg-12 col-md-12 product-container" role="tabpanel">
-        <div class="container tab-content">
-            {% assign sortedProductTab = page.product | sort:"id" %}
-            {% for product in sortedProductTab %}
-            <div {% if product.id == 1 %}  class="tab-pane active" {% endif %} class="tab-pane fade" id="{{ product.category }}">
-                <div class="product-left col-lg-6 col-md-6">
-                    <img class="product-image" src="{{ product.image }}"/>
-                </div>
+            <div class="container">
+                <h4 class="mobile-product-title">SHUTTER SLATS</h4>
+                {% assign sortedProductTab = page.product | sort:"id" %}
+                {% for product in sortedProductTab %}
+                <div id="{{ product.category }}">
+                    <div class="product-left col-lg-6 col-md-6">
+                        <img class="product-image" src="{{ product.image }}"/>
+                    </div>
 
-                <div class="product-right col-lg-6 col-md-6">
-                    <div class="product-title">
-                        <h1>{{ product.title }}</h1>
-                    </div>
-                    <div class="product-size">
-                        <h6 class="size-wide">Wide:{{ product.wide }}m</h6>
-                        <h6 class="size-height">Height:{{ product.height }}m</h6>
-                    </div>
-                    <div class="product-color">
-                        <h4>Colors</h4>
-                        <ul>
-                            {% for productColor in product.colors %}
-                            <li>
-                                <div class="circle-color" style="background:#{{ productColor.color }}"></div>
-                                <span class="circle-title">{{ productColor.title }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="product-view">
-                        <div class="col-lg-6 col-md-6">
-                            <h4>Outside</h4>
-                            <img class="product-sample-image" src="{{ product.outside }}"/>
+                    <div class="product-right col-lg-6 col-md-6">
+                        <div class="product-title">
+                            <h1>{{ product.title }}</h1>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <h4>Inside</h4>
-                            <img class="product-sample-image" src="{{ product.inside }}"/>
+                        <div class="product-size">
+                            <h6 class="size-wide">Wide:{{ product.wide }}m</h6>
+                            <h6 class="size-height">Height:{{ product.height }}m</h6>
+                        </div>
+                        <div class="product-color">
+                            <h4>Colors</h4>
+                            <ul>
+                                {% for productColor in product.colors %}
+                                <li>
+                                    <div class="circle-color" style="background:#{{ productColor.color }}"></div>
+                                    <span class="circle-title">{{ productColor.title }}</span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="product-view">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h4>Outside</h4>
+                                <img class="product-sample-image" src="{{ product.outside }}"/>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h4>Inside</h4>
+                                <img class="product-sample-image" src="{{ product.inside }}"/>
+                            </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-           {% endfor %}
         </div>
-    </div>
     </div>
 </div>
