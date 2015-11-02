@@ -39,6 +39,14 @@ body
   .product-container
     //margin: 3% 0px
     padding: 0
+    .tier-2
+      padding: 0
+      .product-menu
+        background-color: #d35400
+        .navbar-item
+          &:hover,
+          &.active
+            text-decoration: underline
     .product-menu
       background-color: #FB942B
       height: 50px
@@ -435,4 +443,23 @@ body
           h1
             font-size: 30px
 
-
+.each-gallery
+  .content
+    .image-wrapper
+      img
+        max-width: 100%
+        height: auto
+  .pagination
+    margin: 0
+  h1
+    font-family: "MicroSquare-Regular"
+    .small
+      color: #000
+      font-family: "Neue-Frutiger-Light"
+  .thumbs
+    padding: 0
+    li
+      float: left
+      padding: 0
+      margin: 5px 10px 5px 0
+      list-style: none
