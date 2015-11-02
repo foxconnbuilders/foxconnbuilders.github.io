@@ -6,6 +6,13 @@ description: "Longest Flood-Proof Time in the Industry. Your Best Choice!"
 certified: "72 - hr Flood-proof Certified"
 coverBanner: http://res.cloudinary.com/dqprvzepv/image/upload/v1445930250/floodgate/cover.jpg
 
+productTitle: "Flood Gate"
+productMenu:
+    - title: About
+      url: product-floodgate
+      
+    - title: Feature
+      url: features-section
 productSlider:
   - id: 1
     image: http://res.cloudinary.com/dqprvzepv/image/upload/v1445930245/floodgate/image-1.jpg
