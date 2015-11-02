@@ -11,7 +11,7 @@ productMenu:
     - title: About
       url: product-floodgate
       
-    - title: Feature
+    - title: Features
       url: features-section
 productSlider:
   - id: 1
