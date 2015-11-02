@@ -3,7 +3,7 @@
         <ul class="product-menu">
             <h1 class="header-title">{{ page.productTitle }}</h1>
             {% for productMenu in page.productMenu %}
-            <li class="navbar-item">
+            <li class="navbar-item hidden-xs">
                 <a href="#{{ productMenu.url }}">{{ productMenu.title }}</a>
             </li>
             {% endfor %}
