@@ -4,7 +4,7 @@ bigTitle: "AUTOMATED"
 smallTitle: "Security Shutter"
 description: "Your Smart Solution Against Theft & Typhoon"
 productCategoryName: "Shutter Slats"
-coverBanner: http://res.cloudinary.com/dqprvzepv/image/upload/v1444980718/shutter/hero-img.jpg
+coverBanner: http://res.cloudinary.com/foxconn/image/upload/v1446466764/shutter/product/cover.jpg
 
 productMenu:
   - id: 1
@@ -22,7 +22,7 @@ productMenu:
 product:
     - id: 1
       category: tab1
-      image: /images/assets/product1.jpg
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464412/a40_img_q9h5cc.jpg
       title: "A40 SLAT"
       wide: 3.5
       height: 5
@@ -39,12 +39,13 @@ product:
         - title: brown
           color: 8b572a 
           
-      outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1446113983/shutter/product/a-outside.jpg
-      inside: http://res.cloudinary.com/dqprvzepv/image/upload/v1446113985/shutter/product/a-inside.jpg
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464409/a40_inside_zhru8w.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464407/a40_outside_iynpc3.jpg
+
       
     - id: 2
       category: tab2
-      image: /images/assets/product2.jpg
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464405/a56_img_mp07dm.jpg
       title: "A56 SLAT"
       wide: 5
       height: 6
@@ -61,12 +62,12 @@ product:
         - title: brown
           color: 8b572a
           
-      outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1446113983/shutter/product/a-outside.jpg
-      inside: http://res.cloudinary.com/dqprvzepv/image/upload/v1446113985/shutter/product/a-inside.jpg
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464409/a40_inside_zhru8w.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464407/a40_outside_iynpc3.jpg
     
     - id: 3
       category: tab3
-      image: /images/assets/product3.jpg
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_img_aafbdp.jpg
       title: "B40 SLAT"
       wide: 2
       height: 3.5
@@ -83,48 +84,48 @@ product:
         - title: brown
           color: 8b572a 
             
-      outside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445955371/shutter/b40_outside.png
-      inside: http://res.cloudinary.com/dqprvzepv/image/upload/v1445955368/shutter/b40_inside.jpg
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464401/b40_inside_ndrlkf.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg
 
 
-productVideoImg: http://res.cloudinary.com/dqprvzepv/image/upload/v1444994042/shutter/video-cover.jpg
-featureVideoImg: http://res.cloudinary.com/dqprvzepv/image/upload/v1445012517/assets/ShutterCover.jpg
-productVideoButton: http://res.cloudinary.com/dqprvzepv/image/upload/v1444994189/assets/play-button.png
+productVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1446467400/shutter/video-cover.jpg
+featureVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1446467423/shutter/shuttercover.jpg
+productVideoButton: http://res.cloudinary.com/foxconn/image/upload/v1446466227/floodgate/asset/play-button.png
                     
 feature:
     - title: Lighting
       description: "The automated shutter can be controlled to open and close to let light in and out of the room as the client pleases. Also lessen the amount of UV rays to prevent damage to curtains, furniture and wooden floors."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446117359/lighting_gaipj9.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464392/1_lighting_di4usv.png
     
     - title: Security
       description: "The shutter cannot be pried open forcefully by outside force once closed. The patented hooking system also prevents derailing of slats from strong winds protecting you from typhoons."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1445832706/shutter/security.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464393/2_security_rvpcaa.png
     
     - title: Ventilation
       description: "Air vents are situated on the slats to facilitate proper ventilation as the client pleases."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1444989772/shutter/ventilation.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464392/3_ventilation_ikwssj.png
     
     - title: Protected from Strong Winds
       description: "The shutter is made of aluminium alloy and with its patented hook system, it is sure to withstand wind pressure brought about by typhoons and unpleasant weather."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131019/strong_u1xe5y.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464394/3_strong_haxdz4.png
     
     - title: Heat Insulation
       description: "The shutter reduces heat gain in the summer. Effectively keeping the ideal room temperature for your family"
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446096196/heatInsulation_cogj18.png
-    
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464393/4_heatInsulation_byys2e.png
+      
     - title: Sound Insulation
       description: "Outside noise is reduced by the shutter, allowing for a conducive space to go about your business—whether sleeping or working— without interruption."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446096085/soundInsulation_o95voo.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464393/5_soundInsulation_na0giu.png
     
     - title: Silent type Tubular Motor
       description: "Its long-life and silent-type Tubular Motor includes a Thermal Protection System that has the following accreditations and certifications: A. CE and UL  B.German TUV  C.  ISO9001."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131005/tubular_igttyf.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464394/6_tubular_xxgagi.png
     
     - title: Remote and Master Controls
       description: "You are able to control your shutters from a distance with a choice of getting either a remote or master control."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131024/remoteControl_nmuauj.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464394/7_remoteControl_zzzsrx.png
    
     - title: Safety Function
       description: "With an optional auto-reverse safety function, FoxConn’s automated shutter keeps your kids and properties safe. Whenever an object is positioned under the shutter, you could choose to set it to auto-reverse when it touches a barrier."
-      image: http://res.cloudinary.com/dqprvzepv/image/upload/v1446131009/reverseFunction_xoaij5.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446464395/8_reverseFunction_bktuzj.png
 ---
