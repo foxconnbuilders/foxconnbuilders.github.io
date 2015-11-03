@@ -61,9 +61,9 @@ product:
           
         - title: brown
           color: 8b572a
-          
-      inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
-      outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg
+      
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464401/b40_inside_ndrlkf.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg    
     
     - id: 3
       category: tab3
@@ -83,9 +83,9 @@ product:
           
         - title: brown
           color: 8b572a 
-            
-      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464401/b40_inside_ndrlkf.jpg
-      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg     
+      
 
 
 productVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1446467400/shutter/video-cover.jpg
