@@ -1,19 +1,7 @@
 var foxconn = foxconn || {};
 foxconn.shutterFunction = function() {
     foxconn.videoButton();
-    foxconn.pageScroll();
 };
-
-foxconn.pageScroll = function(){
-    $('.navbar-item a').on('click', function(e){
-        e.preventDefault();
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 80
-        }, 1500, 'easeInOutExpo');
-    });
-};
-
 
 foxconn.videoButton = function(){
     var videoTopButton = $('#video-top-button');
