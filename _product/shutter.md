@@ -42,7 +42,6 @@ product:
       inside: http://res.cloudinary.com/foxconn/image/upload/v1446464409/a40_inside_zhru8w.jpg
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446464407/a40_outside_iynpc3.jpg
 
-      
     - id: 2
       category: tab2
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464405/a56_img_mp07dm.jpg
@@ -61,7 +60,6 @@ product:
           
         - title: brown
           color: 8b572a
-      
       inside: http://res.cloudinary.com/foxconn/image/upload/v1446464401/b40_inside_ndrlkf.jpg
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg    
     
