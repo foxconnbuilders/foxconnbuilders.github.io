@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
     {% if page.url == "/product/shutter/" or "/products/firerateddoors/" %}
-        <link rel="stylesheet" href="/css/responsive-tabs.css">
+    <link rel="stylesheet" href="/css/responsive-tabs.css">
     {% endif %}
 
     {% if page.url == "/product/floodgate/" %}
-        <link rel="stylesheet" href="/css/flexslider.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
     {% endif %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -27,21 +27,21 @@
 {% include product/cover.html %}
 <!--for product shutter-->
 {% if page.url == "/product/shutter/" %}
-    {% include product/shutter/product.html %}
-    {% include product/video-top.html %}
-    {% include product/feature.html %}
-    {% include product/video-bottom.html %}
+{% include product/shutter/product.html %}
+{% include product/video-top.html %}
+{% include product/feature.html %}
+{% include product/video-bottom.html %}
 {% endif %}
 
 <!--for product floodgate-->
 {% if page.url == "/product/floodgate/" %}
-    {% include product/floodgate/product.html %}
-    {% include product/feature.html %}
+{% include product/floodgate/product.html %}
+{% include product/feature.html %}
 {% endif %}
 
 <!--for product floodgate-->
 {% if page.url == "/product/firerateddoors/" %}
-    {% include product/firerateddoors/product.html %}
+{% include product/firerateddoors/product.html %}
 {% endif %}
 
 {% include footer.html %}
@@ -54,8 +54,17 @@
 <script type="text/javascript" src="/js/product.js"></script>
 
 {% if page.url == "/product/floodgate/" %}
-    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.navbar-item a').on('click', function(e){
+            e.preventDefault();
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 80
+            }, 1500, 'easeInOutExpo');
+        });
+
         $(window).load(function() {
             $('.flexslider').flexslider({
                 animation: "slide",
@@ -65,86 +74,88 @@
                 touch: true
             });
         });
-    </script>
+    });
+</script>
+
 {% endif %}
 
 {% if page.url == "/product/shutter/" %}
-    <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#responsiveTabs').responsiveTabs({
-                startCollapsed: 'true',
-                animation: 'slide'
-            });
+<script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#responsiveTabs').responsiveTabs({
+            startCollapsed: 'true',
+            animation: 'slide'
         });
-    </script>
+    });
+</script>
 {% endif %}
 
 {% if page.url == "/product/firerateddoors/" %}
-    <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.galleriffic.js"></script>
-    <script type="text/javascript" src="/js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
+<script type="text/javascript" src="/js/jquery.galleriffic.js"></script>
+<script type="text/javascript" src="/js/jquery.opacityrollover.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#responsiveTabs').responsiveTabs({
-                startCollapsed: 'true'
-            });
-            {% for tier1 in page.tier1 %}
-                $('#{{ tier1.slug }}').responsiveTabs({
-                    startCollapsed: 'true',
-                    animation: 'slide'
-                });
-            {% endfor %}
-                var onMouseOutOpacity = 0.67;
-
-                $(".each-gallery").each(function(i){
-                    $('#thumbs + i ul.thumbs li').opacityrollover({
-                        mouseOutOpacity:   onMouseOutOpacity,
-                        mouseOverOpacity:  1.0,
-                        fadeSpeed:         'fast',
-                        exemptionSelector: '.selected'
-                    });
-
-                    $('#thumbs' + i).galleriffic({
-                        delay:                     2500,
-                        numThumbs:                 50,
-                        preloadAhead:              0,
-                        enableTopPager:            true,
-                        enableBottomPager:         true,
-                        maxPagesToShow:            7,
-                        imageContainerSel:         '#slideshow' + i,
-                        controlsContainerSel:      '#controls' + i,
-                        captionContainerSel:       '#caption' + i,
-                        loadingContainerSel:       '#loading' + i,
-                        renderSSControls:          true,
-                        renderNavControls:         true,
-                        playLinkText:              'Play Slideshow',
-                        pauseLinkText:             'Pause Slideshow',
-                        prevLinkText:              '&lsaquo; Previous Photo',
-                        nextLinkText:              'Next Photo &rsaquo;',
-                        nextPageLinkText:          'Next &rsaquo;',
-                        prevPageLinkText:          '&lsaquo; Prev',
-                        enableHistory:             false,
-                        autoStart:                 false,
-                        syncTransitions:           true,
-                        defaultTransitionDuration: 900,
-                        onSlideChange:             function(prevIndex, nextIndex) {
-                            // 'this' refers to the gallery, which is an extension of $('#thumbs')
-                            this.find('ul.thumbs').children()
-                                    .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
-                                    .eq(nextIndex).fadeTo('fast', 1.0);
-                        },
-                        onPageTransitionOut:       function(callback) {
-                            this.fadeTo('fast', 0.0, callback);
-                        },
-                        onPageTransitionIn:        function() {
-                            this.fadeTo('fast', 1.0);
-                        }
-                    });
-                });
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#responsiveTabs').responsiveTabs({
+            startCollapsed: 'true'
         });
-    </script>
+        {% for tier1 in page.tier1 %}
+            $('#{{ tier1.slug }}').responsiveTabs({
+                startCollapsed: 'true',
+                animation: 'slide'
+            });
+            {% endfor %}
+            var onMouseOutOpacity = 0.67;
+
+            $(".each-gallery").each(function(i){
+                $('#thumbs + i ul.thumbs li').opacityrollover({
+                    mouseOutOpacity:   onMouseOutOpacity,
+                    mouseOverOpacity:  1.0,
+                    fadeSpeed:         'fast',
+                    exemptionSelector: '.selected'
+                });
+
+                $('#thumbs' + i).galleriffic({
+                    delay:                     2500,
+                    numThumbs:                 50,
+                    preloadAhead:              0,
+                    enableTopPager:            true,
+                    enableBottomPager:         true,
+                    maxPagesToShow:            7,
+                    imageContainerSel:         '#slideshow' + i,
+                    controlsContainerSel:      '#controls' + i,
+                    captionContainerSel:       '#caption' + i,
+                    loadingContainerSel:       '#loading' + i,
+                    renderSSControls:          true,
+                    renderNavControls:         true,
+                    playLinkText:              'Play Slideshow',
+                    pauseLinkText:             'Pause Slideshow',
+                    prevLinkText:              '&lsaquo; Previous Photo',
+                    nextLinkText:              'Next Photo &rsaquo;',
+                    nextPageLinkText:          'Next &rsaquo;',
+                    prevPageLinkText:          '&lsaquo; Prev',
+                    enableHistory:             false,
+                    autoStart:                 false,
+                    syncTransitions:           true,
+                    defaultTransitionDuration: 900,
+                    onSlideChange:             function(prevIndex, nextIndex) {
+                        // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                        this.find('ul.thumbs').children()
+                                .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                                .eq(nextIndex).fadeTo('fast', 1.0);
+                    },
+                    onPageTransitionOut:       function(callback) {
+                        this.fadeTo('fast', 0.0, callback);
+                    },
+                    onPageTransitionIn:        function() {
+                        this.fadeTo('fast', 1.0);
+                    }
+                });
+            });
+        });
+</script>
 {% endif %}
 
 <script type="text/javascript">

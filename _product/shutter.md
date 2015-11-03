@@ -62,12 +62,12 @@ product:
         - title: brown
           color: 8b572a
           
-      inside: http://res.cloudinary.com/foxconn/image/upload/v1446464409/a40_inside_zhru8w.jpg
-      outside: http://res.cloudinary.com/foxconn/image/upload/v1446464407/a40_outside_iynpc3.jpg
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg
     
     - id: 3
       category: tab3
-      image: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_img_aafbdp.jpg
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446526880/shutter/b40.jpg
       title: "B40 SLAT"
       wide: 2
       height: 3.5
