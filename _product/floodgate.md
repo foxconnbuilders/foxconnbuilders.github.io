@@ -13,6 +13,10 @@ productMenu:
       
     - title: Features
       url: features-section
+      
+    - title: Accreditation
+      url: certificate-section
+      
 productSlider:
   - id: 1
     image: http://res.cloudinary.com/foxconn/image/upload/v1446464568/floodgate/slider/image-1.jpg
@@ -60,7 +64,30 @@ feature:
     - title: Product Testing & After Sales Service
       description: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance. Futhermore, Foxconn Builders, Inc. offers manufacturer’s warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
+ 
       
+accreditationTitle: "Product Testing & After Sales Service"
+accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders, Inc. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
+accreditationImage: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
+bannerTitle: Professional Accreditation
+
+certificate:
+    - title: Pressing Patent
+      url:
       
+    - title: Waterstop Patent
+      url:
+      
+    - title: Philippine Certificate
+      url:
+      
+    - title: Thailand Test Report
+      url:
+      
+    - title: EPDM Material Certificate of the Water Fender
+      url:
+      
+    - title: Taiwan Cheng Kong University Test Report
+      url:       
 
 ---

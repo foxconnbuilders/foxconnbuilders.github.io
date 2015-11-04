@@ -419,6 +419,48 @@ body
       .product-description
         font-size: 14px !important
 
+#certificate-section
+  .certificate-banner
+    height: 50px
+    background-color: #FB942B
+    width: 315px
+    .header-title
+      padding-left: 65px
+      color: white
+      margin: 0
+      font-size: 1.2em
+      font-family: 'Neue-Frutiger-Heavy'
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+  .certificate-content
+    list-style: none
+    padding: 0
+    position: relative
+    float: none
+    display: table
+    margin: 5% auto
+    width: 100%
+    li
+      display: inline-block
+      .certificate-link
+        text-decoration: none
+        display: block
+        text-align: center
+        color: #23527c
+
+@media (max-width: $screen-sm-max)
+  #certificate-section
+    .certificate-content
+      li
+        margin: 2% 0
+
+
+
 @media (max-width: 568px)
   #cover-section
     height: auto
@@ -463,3 +505,9 @@ body
       padding: 0
       margin: 5px 10px 5px 0
       list-style: none
+
+@media (max-width: 320px)
+  #certificate-section
+    .certificate-content
+      li
+        margin: 5% 0

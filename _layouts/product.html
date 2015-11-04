@@ -7,7 +7,7 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
+    <link rel="shorcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -30,6 +30,7 @@
 {% include product/shutter/product.html %}
 {% include product/video-top.html %}
 {% include product/feature.html %}
+{% include product/accreditation.html %}
 {% include product/video-bottom.html %}
 {% endif %}
 
@@ -37,9 +38,11 @@
 {% if page.url == "/product/floodgate/" %}
 {% include product/floodgate/product.html %}
 {% include product/feature.html %}
+{% include product/accreditation.html %}
+
 {% endif %}
 
-<!--for product floodgate-->
+<!--for product fireRateDoors-->
 {% if page.url == "/product/firerateddoors/" %}
 {% include product/firerateddoors/product.html %}
 {% endif %}

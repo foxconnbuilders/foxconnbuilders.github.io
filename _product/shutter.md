@@ -85,8 +85,27 @@ product:
           color: 8b572a 
       inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg     
-      
+    
+accreditationTitle: "Product Testing & After Sales Service"
+accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders, Inc. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
+accreditationImage: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
+bannerTitle: Professional Accreditation
 
+certificate:
+    - title: Taiwan Patent
+      url:
+      
+    - title: Germany Patent
+      url:
+      
+    - title: U.S.A Patent
+      url:
+      
+    - title: ISO 9001
+      url:
+      
+    - title: German Certification
+      url:
 
 productVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1446467400/shutter/video-cover.jpg
 featureVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1446467423/shutter/shuttercover.jpg

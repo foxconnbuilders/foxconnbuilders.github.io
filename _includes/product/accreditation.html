@@ -1,0 +1,23 @@
+<div id="certificate-section">
+    <div class="certificate-banner">
+        <h1 class="header-title">{{ page.bannerTitle }}</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul class="certificate-content">
+                {% for certificate in page.certificate %}
+                {% if page.url =='/product/floodgate/' %}
+                <li class="certificate-item col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <a href="{{ certificate.url }}" class="certificate-link">{{ certificate.title }}</a>
+                </li>
+                {% endif %}
+                {% if page.url =='/product/shutter/' %}
+                <li class="certificate-item col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <a href="{{ certificate.url }}" class="certificate-link">{{ certificate.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
