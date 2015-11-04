@@ -43,6 +43,7 @@ body
       padding: 0
       .product-menu
         background-color: #d35400
+        height: 100%
         .navbar-item
           &:hover,
           &.active
@@ -456,10 +457,25 @@ body
     .small
       color: #000
       font-family: "Neue-Frutiger-Light"
-  .thumbs
-    padding: 0
-    li
+  .navigation
+    float: left
+    width: 100%
+    overflow: hidden
+    position: relative
+    .thumbs
+      clear: left
       float: left
-      padding: 0
-      margin: 5px 10px 5px 0
       list-style: none
+      margin: 0
+      padding: 0
+      position: relative
+      left: 50%
+      text-align: center
+      li
+        display: block
+        float: left
+        list-style: none
+        margin: 4px
+        padding: 0
+        position: relative
+        right: 50%
