@@ -15,3 +15,7 @@ collections:
   product:
     permalink: /product/:path/
     output: true
+
+  pages:
+    permalink: /:path/
+    output: true

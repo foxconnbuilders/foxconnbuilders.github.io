@@ -1,0 +1,37 @@
+<div id="contact-section" class="container-fluid">
+    <div class="row">
+        <div id="contact-map-container">
+            <div>
+                <div class="contact-banner">
+                    <h1 class="header-title">VISIT OUR SHOWROOM</h1>
+                </div>
+                <div id="gmap_canvas></div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <!--<div class="contact-banner">-->
+                <!--<h1 class="header-title">CONTACT US</h1>-->
+            <!--</div>-->
+            <ul class="contact-content container">
+                <li class="contact-list col-md-3 col-xs-6">
+                    <span class="contact-item-icon fa fa-phone"></span>
+                    {% for contactNumber in page.phone %}
+                    <span class="contact-item">{{ contactNumber.number }}</span>
+                    {% endfor %}
+                </li>
+                <li class="contact-list col-md-3 col-xs-6">
+                    <span class="contact-item-icon fa fa-facebook-square"></span>
+                    <span class="contact-item">Like us on <a href="{{ page.socialMedia }}"><u>Facebook</u></a></span>
+                </li>
+                <li class="contact-list col-md-3 col-xs-6">
+                    <span class="contact-item-icon glyphicon glyphicon-envelope"></span>
+                    <span class="contact-item">{{ page.email }}</span>
+                </li>
+                <li class="contact-list col-md-3 col-xs-6">
+                    <span class="contact-item-icon fa fa-building"></span>
+                    <span class="contact-item">{{ page.location }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
