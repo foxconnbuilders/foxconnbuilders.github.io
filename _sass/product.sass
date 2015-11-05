@@ -303,6 +303,69 @@ body
     .product-image
       width: 90%
 
+.each-gallery
+  .content
+    .image-wrapper
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      right: 0
+      img
+        margin-left: auto
+        margin-right: auto
+        display: block
+  .pagination
+    margin: 0
+  h1
+    font-family: "MicroSquare-Regular"
+    .small
+      color: #000
+      font-family: "Neue-Frutiger-Light"
+  .navigation
+    float: left
+    width: 100%
+    overflow: hidden
+    position: relative
+    .thumbs
+      clear: left
+      float: left
+      list-style: none
+      margin: 0
+      padding: 0
+      position: relative
+      left: 50%
+      text-align: center
+      li
+        display: block
+        float: left
+        list-style: none
+        margin: 4px
+        padding: 0
+        position: relative
+        right: 50%
+
+  
+@media (min-width: 1441px)
+  #product-section
+    height: 70vh !important
+    .each-gallery
+      .content
+        .image-wrapper
+          img
+            height: 50vh
+
+@media (max-width: 1440px)
+  #product-section
+    height: 100vh
+    .each-gallery
+      .content
+        .image-wrapper
+          img
+            width: auto
+            height: 70vh
+            display: block
+
 
 @media (max-width: $screen-lg)
   body
@@ -315,6 +378,17 @@ body
           font-size: 2.5em
         .product-description
           font-size: 1.2em
+
+  .each-gallery
+    .content
+      .image-wrapper
+        position: absolute
+        display: block
+        top: 0
+        left: 0
+        right: 0
+        img
+          height: 60vh !important
 
 @media (max-width: $screen-md-max)
   #cover-section
@@ -337,6 +411,16 @@ body
             margin-bottom: 0
 
 @media (max-width: $screen-sm-max)
+  #product-section
+    height: auto !important
+    .each-gallery
+      .product-hero
+        height: 40vh
+        .content
+          .image-wrapper
+            img
+              height: 35vh !important
+         
   #product-section
     .product-container
       text-align: center
@@ -444,38 +528,4 @@ body
           h1
             font-size: 30px
 
-.each-gallery
-  .content
-    .image-wrapper
-      img
-        max-width: 100%
-        height: auto
-  .pagination
-    margin: 0
-  h1
-    font-family: "MicroSquare-Regular"
-    .small
-      color: #000
-      font-family: "Neue-Frutiger-Light"
-  .navigation
-    float: left
-    width: 100%
-    overflow: hidden
-    position: relative
-    .thumbs
-      clear: left
-      float: left
-      list-style: none
-      margin: 0
-      padding: 0
-      position: relative
-      left: 50%
-      text-align: center
-      li
-        display: block
-        float: left
-        list-style: none
-        margin: 4px
-        padding: 0
-        position: relative
-        right: 50%
+

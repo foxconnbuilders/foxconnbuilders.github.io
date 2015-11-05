@@ -99,12 +99,12 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#responsiveTabs').responsiveTabs({
-            startCollapsed: 'true'
+            startCollapsed: 'fade'
         });
         {% for tier1 in page.tier1 %}
             $('#{{ tier1.slug }}').responsiveTabs({
                 startCollapsed: 'true',
-                animation: 'slide'
+                animation: 'fade'
             });
         {% endfor %}
         var onMouseOutOpacity = 0.67;

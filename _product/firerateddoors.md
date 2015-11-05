@@ -2,11 +2,10 @@
 layout: "product"
 bigTitle: "FIRE-RATED"
 smallTitle: "Door"
-description: "Gwapo si Ru"
 productCategoryName: "FIRE-RATED DOORS"
-coverBanner: "http://res.cloudinary.com/foxconn/image/upload/v1444980718/shutter/hero-img.jpg"
+coverBanner: "http://res.cloudinary.com/foxconn/image/upload/v1446535009/heroImage_wo2j7j.jpg"
 tier1:
-   - name: "hybrid"
+   - name: "HYBRID"
      slug: "hybrid"
      products:
        - rank: "1"
@@ -303,7 +302,7 @@ tier1:
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/519_full.jpg"
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/520_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/520_full.jpg"
-   - name: "non - hybrid"
+   - name: "NON-HYBRID"
      slug: "non---hybrid"
      products:
        - rank: "1"
