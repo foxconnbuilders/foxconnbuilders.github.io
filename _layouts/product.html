@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    {% if page.url == "/product/shutter/" or "/products/firerateddoors/" %}
+    {% if page.url == "/product/firerateddoors/" %}
+    <link rel="stylesheet" href="/css/galleriffic.css">
+    {% endif %}
+
+    {% if page.url == "/product/shutter/" or "/product/firerateddoors/" %}
     <link rel="stylesheet" href="/css/responsive-tabs.css">
     {% endif %}
 
@@ -113,24 +117,24 @@
         var onMouseOutOpacity = 0.67;
 
         $(".each-gallery").each(function(i){
-            $('#thumbs + i ul.thumbs li').opacityrollover({
+            $('#thumbs+i ul.thumbs li').opacityrollover({
                 mouseOutOpacity:   onMouseOutOpacity,
                 mouseOverOpacity:  1.0,
                 fadeSpeed:         'fast',
                 exemptionSelector: '.selected'
             });
 
-            $('#thumbs' + i).galleriffic({
+            $('#thumbs'+i).galleriffic({
                 delay:                     2500,
                 numThumbs:                 100,
                 preloadAhead:              0,
                 enableTopPager:            true,
                 enableBottomPager:         true,
                 maxPagesToShow:            7,
-                imageContainerSel:         '#slideshow' + i,
-                controlsContainerSel:      '#controls' + i,
-                captionContainerSel:       '#caption' + i,
-                loadingContainerSel:       '#loading' + i,
+                imageContainerSel:         '#slideshow'+i,
+                controlsContainerSel:      '#controls'+i,
+                captionContainerSel:       '#caption'+i,
+                loadingContainerSel:       '#loading'+i,
                 renderSSControls:          true,
                 renderNavControls:         true,
                 playLinkText:              'Play Slideshow',
