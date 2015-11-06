@@ -30,15 +30,13 @@ productSlider:
   - id: 4
     image: http://res.cloudinary.com/foxconn/image/upload/v1446464564/floodgate/slider/image-4.jpg
     
-
-    
 productDescription:    
   - description: "This system originated in Taiwan and has been in use there for more than 20 years. Given the similarities of weather and flooding conditions in Taiwan and the Philippines, Foxconn Builders, Inc. has taken the initiative to make the product available to consumers and businesses in the Philippines."
   - description: "Foxconn Builders exclusively distributes DAYU Floodgate made with the finest and most durable material - the 6063-T5 Aluminum Alloy. Backed up by testing and certification, Foxconn Builders, Inc. guarantees that the DAYU Floodgate is *100% WATERTIGHT*."
   - description: "100% Watertight refers to the state wherein the floodgate had been installed properly and that all masonry work had been done perfectly"
 
-featureVideoImg: http://res.cloudinary.com/dqprvzepv/image/upload/v1445012517/assets/ShutterCover.jpg
-productVideoButton: http://res.cloudinary.com/dqprvzepv/image/upload/v1444994189/assets/play-button.png
+featureVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1445012517/assets/ShutterCover.jpg
+productVideoButton: http://res.cloudinary.com/foxconn/image/upload/v1444994189/assets/play-button.png
                     
 feature:
     - title: Quick & easy installation
@@ -89,5 +87,3 @@ certificate:
       
     - title: Taiwan Cheng Kong University Test Report
       url:       
-
----

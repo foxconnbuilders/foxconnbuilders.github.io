@@ -102,62 +102,62 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#responsiveTabs').responsiveTabs({
-            startCollapsed: 'true'
+            startCollapsed: 'fade'
         });
         {% for tier1 in page.tier1 %}
             $('#{{ tier1.slug }}').responsiveTabs({
                 startCollapsed: 'true',
-                animation: 'slide'
+                animation: 'fade'
             });
-            {% endfor %}
-            var onMouseOutOpacity = 0.67;
+        {% endfor %}
+        var onMouseOutOpacity = 0.67;
 
-            $(".each-gallery").each(function(i){
-                $('#thumbs + i ul.thumbs li').opacityrollover({
-                    mouseOutOpacity:   onMouseOutOpacity,
-                    mouseOverOpacity:  1.0,
-                    fadeSpeed:         'fast',
-                    exemptionSelector: '.selected'
-                });
+        $(".each-gallery").each(function(i){
+            $('#thumbs + i ul.thumbs li').opacityrollover({
+                mouseOutOpacity:   onMouseOutOpacity,
+                mouseOverOpacity:  1.0,
+                fadeSpeed:         'fast',
+                exemptionSelector: '.selected'
+            });
 
-                $('#thumbs' + i).galleriffic({
-                    delay:                     2500,
-                    numThumbs:                 50,
-                    preloadAhead:              0,
-                    enableTopPager:            true,
-                    enableBottomPager:         true,
-                    maxPagesToShow:            7,
-                    imageContainerSel:         '#slideshow' + i,
-                    controlsContainerSel:      '#controls' + i,
-                    captionContainerSel:       '#caption' + i,
-                    loadingContainerSel:       '#loading' + i,
-                    renderSSControls:          true,
-                    renderNavControls:         true,
-                    playLinkText:              'Play Slideshow',
-                    pauseLinkText:             'Pause Slideshow',
-                    prevLinkText:              '&lsaquo; Previous Photo',
-                    nextLinkText:              'Next Photo &rsaquo;',
-                    nextPageLinkText:          'Next &rsaquo;',
-                    prevPageLinkText:          '&lsaquo; Prev',
-                    enableHistory:             false,
-                    autoStart:                 false,
-                    syncTransitions:           true,
-                    defaultTransitionDuration: 900,
-                    onSlideChange:             function(prevIndex, nextIndex) {
-                        // 'this' refers to the gallery, which is an extension of $('#thumbs')
-                        this.find('ul.thumbs').children()
-                                .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
-                                .eq(nextIndex).fadeTo('fast', 1.0);
-                    },
-                    onPageTransitionOut:       function(callback) {
-                        this.fadeTo('fast', 0.0, callback);
-                    },
-                    onPageTransitionIn:        function() {
-                        this.fadeTo('fast', 1.0);
-                    }
-                });
+            $('#thumbs' + i).galleriffic({
+                delay:                     2500,
+                numThumbs:                 100,
+                preloadAhead:              0,
+                enableTopPager:            true,
+                enableBottomPager:         true,
+                maxPagesToShow:            7,
+                imageContainerSel:         '#slideshow' + i,
+                controlsContainerSel:      '#controls' + i,
+                captionContainerSel:       '#caption' + i,
+                loadingContainerSel:       '#loading' + i,
+                renderSSControls:          true,
+                renderNavControls:         true,
+                playLinkText:              'Play Slideshow',
+                pauseLinkText:             'Pause Slideshow',
+                prevLinkText:              '&lsaquo; Previous Photo',
+                nextLinkText:              'Next Photo &rsaquo;',
+                nextPageLinkText:          'Next &rsaquo;',
+                prevPageLinkText:          '&lsaquo; Prev',
+                enableHistory:             false,
+                autoStart:                 false,
+                syncTransitions:           true,
+                defaultTransitionDuration: 900,
+                onSlideChange:             function(prevIndex, nextIndex) {
+                    // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                    this.find('ul.thumbs').children()
+                            .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                            .eq(nextIndex).fadeTo('fast', 1.0);
+                },
+                onPageTransitionOut:       function(callback) {
+                    this.fadeTo('fast', 0.0, callback);
+                },
+                onPageTransitionIn:        function() {
+                    this.fadeTo('fast', 1.0);
+                }
             });
         });
+    });
 </script>
 {% endif %}
 
