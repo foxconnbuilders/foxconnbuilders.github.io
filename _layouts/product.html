@@ -102,13 +102,12 @@
 <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
 <script type="text/javascript" src="/js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="/js/jquery.opacityrollover.js"></script>
-<script type="text/javascript" src="/js/jquery.history.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
         $('#responsiveTabs').responsiveTabs({
             startCollapsed: 'true',
-            animation: 'slide'
+            animation: 'fade'
         });
         {% for tier1 in page.tier1 %}
             $('#{{ tier1.slug }}').responsiveTabs({
