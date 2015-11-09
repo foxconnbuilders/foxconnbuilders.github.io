@@ -41,20 +41,20 @@
                                         <!--<div id="caption{{ index }}" class="caption-container"></div>-->
                                     </div>
                                 </div>
-                                <div class="product-thumbnial col-md-6 col-sm-12 center-container">
-                                    <h1>FIRE-RATED <span class="small">Doors</span> </h1>
-                                    <h3>{{ product.name | upcase }}</h3>
-                                    <div id="thumbs{{ index }}" class="navigation">
-                                        <ul class="thumbs noscript">
-                                            {% for pattern in product.patterns %}
-                                            <li>
-                                                <a class="thumb" name="leaf" href="{{ pattern.fullsize }}" title="Title #0">
-                                                    <img src="http://res.cloudinary.com/foxconn/image/fetch/c_crop,g_center,h_48,w_48/{{ pattern.thumbnail }}" alt="Title #0" />
-                                                </a>
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
+                            </div>
+                            <div class="product-thumbnail col-md-6 col-sm-12 center-container">
+                                <h1>FIRE-RATED <span class="small">Doors</span> </h1>
+                                <h3>{{ product.name | upcase }}</h3>
+                                <div id="thumbs{{ index }}" class="navigation">
+                                    <ul class="thumbs noscript">
+                                        {% for pattern in product.patterns %}
+                                        <li>
+                                            <a class="thumb" name="leaf" href="{{ pattern.fullsize }}" title="Title #0">
+                                                <img src="http://res.cloudinary.com/foxconn/image/fetch/c_crop,g_center,h_48,w_48/{{ pattern.thumbnail }}" alt="Title #0" />
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
                                 </div>
                             </div>
                         </div>

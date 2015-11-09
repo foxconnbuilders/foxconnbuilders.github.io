@@ -102,16 +102,18 @@
 <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
 <script type="text/javascript" src="/js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="/js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="/js/jquery.history.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
         $('#responsiveTabs').responsiveTabs({
-            startCollapsed: 'fade'
+            startCollapsed: 'true',
+            animation: 'slide'
         });
         {% for tier1 in page.tier1 %}
             $('#{{ tier1.slug }}').responsiveTabs({
                 startCollapsed: 'true',
-                animation: 'fade'
+                animation: 'slide'
             });
         {% endfor %}
         var onMouseOutOpacity = 0.67;
@@ -128,22 +130,22 @@
                 delay:                     2500,
                 numThumbs:                 100,
                 preloadAhead:              0,
-                enableTopPager:            true,
-                enableBottomPager:         true,
+                enableTopPager:            false,
+                enableBottomPager:         false,
                 maxPagesToShow:            7,
                 imageContainerSel:         '#slideshow'+i,
                 controlsContainerSel:      '#controls'+i,
                 captionContainerSel:       '#caption'+i,
                 loadingContainerSel:       '#loading'+i,
-                renderSSControls:          true,
-                renderNavControls:         true,
+                renderSSControls:          false,
+                renderNavControls:         false,
                 playLinkText:              'Play Slideshow',
                 pauseLinkText:             'Pause Slideshow',
                 prevLinkText:              '&lsaquo; Previous Photo',
                 nextLinkText:              'Next Photo &rsaquo;',
                 nextPageLinkText:          'Next &rsaquo;',
                 prevPageLinkText:          '&lsaquo; Prev',
-                enableHistory:             false,
+                enableHistory:             true,
                 autoStart:                 false,
                 syncTransitions:           true,
                 defaultTransitionDuration: 900,
