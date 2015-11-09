@@ -20,16 +20,10 @@
                             <a href="#{{ product.slug }}" aria-controls="{{ product.slug }}" role="tab" data-toggle="tab">{{ product.name }}</a>
                         </li>
                     {% endfor %}
-                    <!--<li class="navbar-item dropdown pull-right">-->
-                        <!--<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
-                        <!--<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">-->
-                            <!--<li class="always-dropdown"><a href="#settings4" data-toggle="tab">Always in dropdown</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
                 </ul>
                 {% for product in tier1Items.products %}
                     <div id="{{ product.slug }}">
-                        <div class="container">
+                        <div class="section- container">
                             <div class="row each-gallery col-md-6 col-sm-12 col-xs-12">
                                 <div class="product-hero center-container">
                                     <div id="gallery" class="content">
@@ -42,7 +36,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row product-thumbnail col-md-6 col-sm-12 col-xs-12 center-container">
+                            <div class="row product-thumbnail col-md-6 col-xs-12 center-container">
                                 <h1>FIRE-RATED <span class="small">Doors</span> </h1>
                                 <h3>{{ product.name | upcase }}</h3>
                                 <div id="thumbs{{ index }}" class="navigation">
