@@ -106,8 +106,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#responsiveTabs').responsiveTabs({
-            startCollapsed: 'true',
-            animation: 'fade'
+            startCollapsed: 'true'
         });
         {% for tier1 in page.tier1 %}
             $('#{{ tier1.slug }}').responsiveTabs({

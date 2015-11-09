@@ -303,55 +303,94 @@ body
     .product-image
       width: 90%
 
-.each-gallery
-  float: left
-  .content
-    .image-wrapper
-      position: absolute
-      display: block
-      top: 0
-      left: 0
-      right: 0
-      img
-        margin-left: auto
-        margin-right: auto
-        display: block
-  .pagination
-    margin: 0
-  h1
-    font-family: "MicroSquare-Regular"
-    .small
-      color: #000
-      font-family: "Neue-Frutiger-Light"
-  .navigation
-    float: left
-    width: 100%
-    overflow: hidden
-    position: relative
-    .thumbs
-      clear: left
-      float: left
-      list-style: none
-      margin: 0
+#product-fire-section
+  margin-bottom: 10%
+  height: auto !important
+  .product-container
+    padding: 0
+    .tier-2
       padding: 0
-      position: relative
-      left: 50%
-      text-align: center
-      li
+      .product-menu
+        background-color: #d35400
+        height: 100%
+        .navbar-item
+          &:hover,
+          &.active
+            text-decoration: underline
+    .product-menu
+      background-color: #FB942B
+      height: 50px
+      .header-title
+        color: white
+        margin: 0
+        padding-left: 65px
+        font-size: 1.2em
+        font-family: 'Neue-Frutiger-Heavy'
+        position: relative
+        margin-right: 40px
+        display: inline-block
+      .navbar-item
+        padding: 13px 0px
+        display: inline-block
+        transition: background-color 300ms ease
+        margin: 0 -2px
+        &:hover,
+        &.active
+          background-color: #d35400
+        a
+          font-size: 17px
+          text-decoration: none
+          color: white
+          padding: 13px 30px
+
+  .each-gallery
+    float: left
+    .content
+      .image-wrapper
+        position: absolute
         display: block
+        top: 0
+        left: 0
+        right: 0
+        img
+          margin-left: auto
+          margin-right: auto
+          display: block
+    .pagination
+      margin: 0
+    h1
+      font-family: "MicroSquare-Regular"
+      .small
+        color: #000
+        font-family: "Neue-Frutiger-Light"
+    .navigation
+      float: left
+      width: 100%
+      overflow: hidden
+      position: relative
+      .thumbs
+        clear: left
         float: left
         list-style: none
-        margin: 4px
+        margin: 0
         padding: 0
         position: relative
-        right: 50%
+        left: 50%
+        text-align: center
+        li
+          display: block
+          float: left
+          list-style: none
+          margin: 4px
+          padding: 0
+          position: relative
+          right: 50%
 
 .product-thumbnail
   float: right
 
 @media (min-width: 1441px)
-  #product-section
-    height: 70vh !important
+  #product-fire-section
     .each-gallery
       .content
         .image-wrapper
@@ -359,8 +398,7 @@ body
             height: 50vh
 
 @media (max-width: 1440px)
-  #product-section
-    height: 100vh
+  #product-fire-section
     .each-gallery
       .content
         .image-wrapper
@@ -368,7 +406,6 @@ body
             width: auto
             height: 70vh
             display: block
-
 
 @media (max-width: $screen-lg)
   body
@@ -414,7 +451,7 @@ body
             margin-bottom: 0
 
 @media (max-width: $screen-sm-max)
-  #product-section
+  #product-fire-section
     height: auto !important
     .each-gallery
       .product-hero
@@ -474,6 +511,7 @@ body
     .r-tabs-state-active
       .r-tabs-anchor
         background-color: #d35400 !important
+
   #product-section
     .product-container
       .product-right
