@@ -9,7 +9,7 @@ tier1:
      slug: "hybrid"
      products:
        - rank: "1"
-         name: "WOOD (CNC)"
+         name: "Wood (CNC)"
          slug: "wood-cnc-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/486_thumbnail.jpg"
@@ -79,7 +79,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/443_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/443_full.jpg"
        - rank: "2"
-         name: "WOOD (WEATHERED)"
+         name: "Wood (Weathered)"
          slug: "wood-weathered-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/404_thumbnail.jpg"
@@ -99,7 +99,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/411_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/411_full.jpg"
        - rank: "3"
-         name: "CARBON FIBER"
+         name: "Carbon Fiber"
          slug: "carbon-fiber-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/561_thumbnail.jpg"
@@ -183,7 +183,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/584_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/584_full.jpg"
        - rank: "4"
-         name: "FIBER REINFORCED PLASTIC (FRP)"
+         name: "Fiber Reinforced Plastic (FRP)"
          slug: "fiber-reinforced-plastic-frp-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/529_thumbnail.jpg"
@@ -217,7 +217,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/389_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/389_full.jpg"
        - rank: "5"
-         name: "CARVED FORGED DOORS SERIES"
+         name: "Carved Forged Doors Series"
          slug: "carved-forged-doors-series"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/348_thumbnail.jpg"
@@ -233,7 +233,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/353_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/353_full.jpg"
        - rank: "6"
-         name: "EMBOSSED DESIGN STEEL"
+         name: "Embossed Design Steel"
          slug: "embossed-design-steel-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/341_thumbnail.jpg"
@@ -243,7 +243,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/347_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/347_full.jpg"
        - rank: "7"
-         name: "BRONZE FRAME STRUCTURE"
+         name: "Bronze Frame Structure"
          slug: "bronze-frame-structure-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/360_thumbnail.jpg"
@@ -279,7 +279,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/375_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/375_full.jpg"
        - rank: "8"
-         name: "CAST ALUMINUM FRAME STRUCTURE"
+         name: "Cast Aluminum Frame Structure"
          slug: "cast-aluminum-frame-structure-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/354_thumbnail.jpg"
@@ -293,7 +293,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/358_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/358_full.jpg"
        - rank: "9"
-         name: "PAINTED STEEL"
+         name: "Painted Steel"
          slug: "painted-steel-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/518_thumbnail.jpg"
@@ -306,7 +306,7 @@ tier1:
      slug: "non---hybrid"
      products:
        - rank: "1"
-         name: "ROOM"
+         name: "Room"
          slug: "room-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/444_thumbnail.jpg"
@@ -442,7 +442,7 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/493_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/493_full.jpg"
        - rank: "2"
-         name: "PATIO"
+         name: "Patio"
          slug: "patio-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/494_thumbnail.jpg"
@@ -454,13 +454,13 @@ tier1:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/497_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/497_full.jpg"
        - rank: "3"
-         name: "STEEL"
+         name: "Steel"
          slug: "steel-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/506_thumbnail.jpg"
              fullsize: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/506_full.jpg"
        - rank: "4"
-         name: "OUTSIDE ENTRANCE"
+         name: "Outside Entrance"
          slug: "outside-entrance-doors"
          patterns:
            - thumbnail: "http://res.cloudinary.com/foxconn/image/upload/v1446478031/products/498_thumbnail.jpg"
