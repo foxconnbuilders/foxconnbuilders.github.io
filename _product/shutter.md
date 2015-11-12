@@ -8,20 +8,43 @@ coverBanner: http://res.cloudinary.com/foxconn/image/upload/v1446466764/shutter/
 
 productMenu:
   - id: 1
-    title: A40
+    title: B40
     slugLink: tab1
     
   - id: 2
-    title: A56
+    title: A40
     slugLink: tab2
-    
-  - id: 3
-    title: B40
-    slugLink: tab3
   
+  - id: 3
+    title: A56
+    slugLink: tab3
+    
 product:
     - id: 1
       category: tab1
+      image: http://res.cloudinary.com/foxconn/image/upload/v1446526880/shutter/b40.jpg
+      title: "B40 SLAT"
+      wide: 2
+      height: 3.5
+      colors: 
+        - title: white
+          color: ffffff
+          
+        - title: ivory
+          color: f9f4dd
+        
+        - title: m. gray
+          color: cccccc
+          
+        - title: brown
+          color: 8b572a 
+      inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
+      outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg   
+
+    
+        
+    - id: 2
+      category: tab2
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464412/a40_img_q9h5cc.jpg
       title: "A40 SLAT"
       wide: 3.5
@@ -41,9 +64,9 @@ product:
           
       inside: http://res.cloudinary.com/foxconn/image/upload/v1446464409/a40_inside_zhru8w.jpg
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446464407/a40_outside_iynpc3.jpg
-
-    - id: 2
-      category: tab2
+    
+    - id: 3
+      category: tab3
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464405/a56_img_mp07dm.jpg
       title: "A56 SLAT"
       wide: 5
@@ -62,28 +85,7 @@ product:
           color: 8b572a
       inside: http://res.cloudinary.com/foxconn/image/upload/v1446464401/b40_inside_ndrlkf.jpg
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg    
-    
-    - id: 3
-      category: tab3
-      image: http://res.cloudinary.com/foxconn/image/upload/v1446526880/shutter/b40.jpg
-      title: "B40 SLAT"
-      wide: 2
-      height: 3.5
-      colors: 
-        - title: white
-          color: ffffff
-          
-        - title: ivory
-          color: f9f4dd
-        
-        - title: m. gray
-          color: cccccc
-          
-        - title: brown
-          color: 8b572a 
-      inside: http://res.cloudinary.com/foxconn/image/upload/v1446526875/shutter/inside.jpg
-      outside: http://res.cloudinary.com/foxconn/image/upload/v1446526873/shutter/outside.jpg     
-    
+      
 accreditationTitle: "Product Testing & After Sales Service"
 accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders, Inc. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
 accreditationImage: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
