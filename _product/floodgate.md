@@ -35,8 +35,9 @@ productDescription:
   - description: "Foxconn Builders exclusively distributes DAYU Floodgate made with the finest and most durable material - the 6063-T5 Aluminum Alloy. Backed up by testing and certification, Foxconn Builders, Inc. guarantees that the DAYU Floodgate is *100% WATERTIGHT*."
   - description: "100% Watertight refers to the state wherein the floodgate had been installed properly and that all masonry work had been done perfectly"
 
-featureVideoImg: http://res.cloudinary.com/foxconn/image/upload/v1445012517/assets/ShutterCover.jpg
-productVideoButton: http://res.cloudinary.com/foxconn/image/upload/v1444994189/assets/play-button.png
+featureVideoImg: /images/assets/floodgate-cover.jpg
+productVideoButton: http://res.cloudinary.com/foxconn/image/upload/v1446466227/floodgate/asset/play-button.png
+
                     
 feature:
     - title: Quick & easy installation
