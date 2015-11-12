@@ -1,7 +1,7 @@
 ---
 layout: "product"
-bigTitle: "FIRE-RATED"
-smallTitle: "Doors"
+bigTitle: "DOORS"
+smallTitle: ""
 productCategoryName: "FIRE-RATED DOORS"
 coverBanner: "http://res.cloudinary.com/foxconn/image/upload/v1446535009/heroImage_wo2j7j.jpg"
 tier1:
