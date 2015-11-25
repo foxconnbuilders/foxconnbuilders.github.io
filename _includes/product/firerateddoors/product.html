@@ -32,12 +32,12 @@
                                             <div id="loading{{ index }}" class="loader"></div>
                                             <div id="slideshow{{ index }}" class="slideshow"></div>
                                         </div>
-                                        <!--<div id="caption{{ index }}" class="caption-container"></div>-->
                                     </div>
                                 </div>
                             </div>
                             <div class="row product-thumbnail col-md-6 col-xs-12 center-container">
-                                <h1>Doors </h1>
+                                <h1>Door #:</h1>
+                                <div id="caption{{ index }}"></div>
                                 <h3>{{ product.name | upcase }}</h3>
                                 <div id="thumbs{{ index }}" class="navigation">
                                     <ul class="thumbs noscript">
@@ -46,6 +46,9 @@
                                             <a class="thumb" href="{{ pattern.fullsize }}" title="Title #0">
                                                 <img src="http://res.cloudinary.com/foxconn/image/fetch/c_crop,g_center,h_48,w_48/{{ pattern.thumbnail }}" alt="Title #0" />
                                             </a>
+                                            <div class="caption">
+                                                <h3>{{ pattern.productID }}</h3>
+                                            </div>
                                         </li>
                                         {% endfor %}
                                     </ul>
