@@ -87,7 +87,7 @@ product:
       outside: http://res.cloudinary.com/foxconn/image/upload/v1446464400/b40_outside_oe3kfj.jpg    
       
 accreditationTitle: "Product Testing & After Sales Service"
-accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders, Inc. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
+accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders Corp. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
 accreditationImage: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
 bannerTitle: Professional Accreditation
 
@@ -118,7 +118,7 @@ feature:
     
     - title: Security
       description: "The shutter cannot be pried open forcefully by outside force once closed. The patented hooking system also prevents derailing of slats from strong winds protecting you from typhoons."
-      image: http://res.cloudinary.com/foxconn/image/upload/v1446464393/2_security_rvpcaa.png
+      image: http://res.cloudinary.com/foxconn/image/upload/v1448424802/shutter/security.png
     
     - title: Ventilation
       description: "Air vents are situated on the slats to facilitate proper ventilation as the client pleases."
@@ -145,6 +145,6 @@ feature:
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464394/7_remoteControl_zzzsrx.png
    
     - title: Safety Function
-      description: "With an optional auto-reverse safety function, FoxConn’s automated shutter keeps your kids and properties safe. Whenever an object is positioned under the shutter, you could choose to set it to auto-reverse when it touches a barrier."
+      description: "With an optional auto-reverse safety function, Foxconn’s automated shutter keeps your kids and properties safe. Whenever an object is positioned under the shutter, you could choose to set it to auto-reverse when it touches a barrier."
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464395/8_reverseFunction_bktuzj.png
 ---

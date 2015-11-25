@@ -31,8 +31,8 @@ productSlider:
     image: http://res.cloudinary.com/foxconn/image/upload/v1446464564/floodgate/slider/image-4.jpg
     
 productDescription:    
-  - description: "This system originated in Taiwan and has been in use there for more than 20 years. Given the similarities of weather and flooding conditions in Taiwan and the Philippines, Foxconn Builders, Inc. has taken the initiative to make the product available to consumers and businesses in the Philippines."
-  - description: "Foxconn Builders exclusively distributes DAYU Floodgate made with the finest and most durable material - the 6063-T5 Aluminum Alloy. Backed up by testing and certification, Foxconn Builders, Inc. guarantees that the DAYU Floodgate is *100% WATERTIGHT*."
+  - description: "This system originated in Taiwan and has been in use there for more than 20 years. Given the similarities of weather and flooding conditions in Taiwan and the Philippines, Foxconn Builders Corp. has taken the initiative to make the product available to consumers and businesses in the Philippines."
+  - description: "Foxconn Builders exclusively distributes DAYU Floodgate made with the finest and most durable material - the 6063-T5 Aluminum Alloy. Backed up by testing and certification, Foxconn Builders Corp. guarantees that the DAYU Floodgate is *100% WATERTIGHT*."
   - description: "100% Watertight refers to the state wherein the floodgate had been installed properly and that all masonry work had been done perfectly"
 
 featureVideoImg: /images/assets/floodgate-cover.jpg
@@ -61,12 +61,12 @@ feature:
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464447/floodgate/feature/guaranteed.png
     
     - title: Product Testing & After Sales Service
-      description: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance. Futhermore, Foxconn Builders, Inc. offers manufacturer’s warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
+      description: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance. Futhermore, Foxconn Builders Corp. offers manufacturer’s warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
       image: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
  
       
 accreditationTitle: "Product Testing & After Sales Service"
-accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders, Inc. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
+accreditationDescription: "After installation of our Foxconn Floodgate, we offer product testing to all our floodgate clients for Quality Assurance, Futhermore, Foxconn Builders Corp. Offers manufacturer's warranty for the floodgate and after sales service to all its clients to ensure 100% customer satisfaction."
 accreditationImage: http://res.cloudinary.com/foxconn/image/upload/v1446464449/floodgate/feature/product-testing.png
 bannerTitle: Professional Accreditation
 
