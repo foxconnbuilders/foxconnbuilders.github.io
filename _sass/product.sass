@@ -1,7 +1,10 @@
 body
   margin: -50px 0 60px !important
   font-family: 'Neue-Frutiger-Light'
-
+.door-title
+  text-align: left
+  position: relative
+  
 #cover-section
   height: 100vh
   .row
@@ -390,8 +393,8 @@ body
 
 .product-thumbnail
   float: right
-  .image-caption
-    position: relative
+  //.image-caption
+  //  position: relative
 
 @media (min-width: 1441px)
   #product-fire-section
@@ -455,6 +458,7 @@ body
             margin-bottom: 0
 
 @media (max-width: $screen-sm-max)
+
   #product-fire-section
     height: auto !important
     .each-gallery
@@ -487,9 +491,13 @@ body
         .product-color
           h4
             font-size: 1.5em
-
+  .door-title
+    text-align: center
+  ul.thumbs
+    margin: 20% 0 !important
+    padding: 0
 @media (max-width: $screen-xs-max)
-  
+
   .mobile-product-title
     display: block !important
     font-family: "Neue-Frutiger-Heavy"
@@ -677,3 +685,8 @@ body
     .certificate-content
       li
         margin: 5% 0
+
+  ul.thumbs
+    margin: 40% auto !important
+    li
+      margin: 5px auto !important
