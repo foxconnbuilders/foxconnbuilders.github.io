@@ -4,7 +4,7 @@ title: Contact Us
 layout: default
 phone:
     - number: (63)2 441-5303   
-    - number: (63)2 441-5303   
+    - number: (63)2 441-5304   
 
 socialMedia: https://goo.gl/cZ4BSg
 email: foxconn.builders@yahoo.com
