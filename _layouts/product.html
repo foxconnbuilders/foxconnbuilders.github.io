@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="/css/galleriffic.css">
     {% endif %}
 
-    {% if page.url == "/product/shutter/" or "/product/firerateddoors/" %}
+    {% if page.url == "/product/shutter/" or "/product/firerateddoors/" or "/product/louvers/" %}
     <link rel="stylesheet" href="/css/responsive-tabs.css">
     {% endif %}
+
 
     {% if page.url == "/product/floodgate/" %}
     <link rel="stylesheet" href="/css/flexslider.css">
@@ -59,6 +60,11 @@
 <!--for product fireRateDoors-->
 {% if page.url == "/product/firerateddoors/" %}
 {% include product/firerateddoors/product.html %}
+{% endif %}
+
+<!--for product louvers-->
+{% if page.url == "/product/louvers/" %}
+{% include product/louvers/product.html %}
 {% endif %}
 
 {% include footer.html %}
@@ -107,7 +113,7 @@
 
 {% endif %}
 
-{% if page.url == "/product/shutter/" %}
+{% if page.url == "/product/shutter/" or "/product/louvers/" %}
 <script type="text/javascript" src="/js/jquery.responsiveTabs.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){

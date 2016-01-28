@@ -6,7 +6,7 @@
                 {% assign sortedProductMenu =  page.productMenu | sort:"id" %}
                 {% for productMenu in sortedProductMenu %}
                 <li href="#shutter-product"{% if productMenu.id == 1 %}  class="navbar-item active" {% endif %} class="navbar-item" role="presentation">
-                    <a href="#{{ productMenu.slugLink }}" aria-controls="{{ productMenu.slugLink }}" role="tab" data-toggle="tab">{{ productMenu.title }} SLAT</a>
+                    <a href="#{{ productMenu.slugLink }}" aria-controls="{{ productMenu.slugLink }}" role="tab" data-toggle="tab">{{ productMenu.title }} Slat</a>
                 </li>
                 {% endfor %}
             </ul>
