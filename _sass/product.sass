@@ -53,16 +53,17 @@ body
             text-decoration: underline
     .product-menu
       background-color: #FB942B
-      height: 50px
+      height: 100px
       .header-title
         color: white
         margin: 0
-        padding-left: 65px
         font-size: 1.2em
         font-family: 'Neue-Frutiger-Heavy'
         position: relative
-        margin-right: 40px
-        display: inline-block
+        display: block
+        float: left
+        height: 100px
+        padding: 40px 40px
       .navbar-item
         padding: 13px 0px
         display: inline-block
@@ -402,6 +403,14 @@ body
   //.image-caption
   //  position: relative
 
+@media (min-width: 1610px)
+  #product-section
+    .product-container
+      .product-menu
+        height: 50px
+        h1
+          padding: 20px 40px !important
+
 @media (min-width: 1441px)
   #product-fire-section
     .each-gallery
@@ -443,11 +452,6 @@ body
         img
           height: 60vh !important
 
-  #product-section
-    .product-container
-      .product-menu
-        height: 100px
-        text-align: center
 
 @media (max-width: $screen-md-max)
   #cover-section
@@ -470,7 +474,6 @@ body
             margin-bottom: 0
 
 @media (max-width: $screen-sm-max)
-
   #product-fire-section
     height: auto !important
     .each-gallery
@@ -490,6 +493,10 @@ body
   #product-section
     .product-container
       text-align: center
+      .product-menu
+        height: 150px
+        h1
+          height: 150px
       .product-right
         .product-title
           h1
@@ -503,6 +510,8 @@ body
         .product-color
           h4
             font-size: 1.5em
+  
+    
   .door-title
     text-align: center
   ul.thumbs
