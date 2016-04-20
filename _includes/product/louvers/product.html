@@ -16,7 +16,9 @@
                 {% for product in sortedProductTab %}
                 <div id="{{ product.category }}">
                     <div class="product-left col-lg-6 col-md-6">
-                        <img class="product-image" src="{{ product.image }}"/>
+                        <span class="zoom image-1">
+                            <img class="product-image" src="{{ product.image }}"/>
+                        </span>
                     </div>
 
                     <div class="product-right col-lg-6 col-md-6">
@@ -26,10 +28,14 @@
                         <div class="product-view">
                             <!--<h4>Other Images</h4>-->
                             <div class="row-lg-6 row-sm-6">
-                                <img class="product-sample-image" src="{{ product.imgOne }}"/>
+                                <span class="image-2" style="display: block;">
+                                    <img class="product-sample-image" src="{{ product.imgOne }}"/>
+                                </span>
                             </div>
                             <div class="row-lg-6 row-sm-6">
-                                <img class="product-sample-image" src="{{ product.imgTwo }}"/>
+                                <span class="image-3" style="display: block;">
+                                    <img class="product-sample-image" src="{{ product.imgTwo }}"/>
+                                </span>
                             </div>
                         </div>
                     </div>
