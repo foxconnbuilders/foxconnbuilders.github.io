@@ -452,7 +452,6 @@ body
         img
           height: 60vh !important
 
-
 @media (max-width: $screen-md-max)
   #cover-section
     height: 35vh
@@ -510,15 +509,30 @@ body
         .product-color
           h4
             font-size: 1.5em
-  
-    
+
+  .r-tabs
+    .r-tabs-accordion-title>
+    .r-tabs-anchor
+      display: block
+      padding: 10px
+      background-color: #FB942B
+      color: #fff !important
+      font-weight: bold
+      text-decoration: none
+      font-size: 1.3em
+      text-align: center
+      margin: 0 -15px
+
+    .r-tabs-state-active
+      .r-tabs-anchor
+        background-color: #d35400 !important
+
   .door-title
     text-align: center
   ul.thumbs
     margin: 20% 0 !important
     padding: 0
 @media (max-width: $screen-xs-max)
-
   .mobile-product-title
     display: block !important
     font-family: "Neue-Frutiger-Heavy"
@@ -527,23 +541,6 @@ body
     background-color: #FB942B
     margin: 0 -15px
     padding: 10px
-
-  .r-tabs
-    .r-tabs-accordion-title>
-      .r-tabs-anchor
-        display: block
-        padding: 10px
-        background-color: #FB942B
-        color: #fff !important
-        font-weight: bold
-        text-decoration: none
-        font-size: 1.3em
-        text-align: center
-        margin: 0 -15px
-
-    .r-tabs-state-active
-      .r-tabs-anchor
-        background-color: #d35400 !important
 
   #product-section
     .product-container
