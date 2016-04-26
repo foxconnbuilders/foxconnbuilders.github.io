@@ -257,11 +257,11 @@
 
 <script type="text/javascript" src="/js/jquery.zoom.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
+    if($(window).width() >= 991){
         $('.image-1').zoom();
         $('.image-2').zoom();
         $('.image-3').zoom();
-    });
+    }
 </script>
 <script type="text/javascript">
     $(document).ready(function(){
