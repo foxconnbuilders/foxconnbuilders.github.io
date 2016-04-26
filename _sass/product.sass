@@ -4,7 +4,10 @@ body
 .door-title
   text-align: left
   position: relative
-  
+.no-gutter
+  padding-left: 0px
+  padding-right: 0px
+
 #cover-section
   height: 100vh
   .row
@@ -73,7 +76,7 @@ body
         &.active
           background-color: #d35400
         a
-          
+
           font-size: 17px
           text-decoration: none
           color: white
@@ -146,7 +149,7 @@ body
         &.active
           background-color: #d35400
         a
-          
+
           font-size: 17px
           text-decoration: none
           color: white
@@ -340,7 +343,7 @@ body
         margin-right: 40px
         display: inline-block
       .navbar-item
-        
+
         padding: 13px 0px
         display: inline-block
         transition: background-color 300ms ease
@@ -349,7 +352,7 @@ body
         &.active
           background-color: #d35400
         a
-          
+
           font-size: 17px
           text-decoration: none
           color: white
@@ -400,8 +403,8 @@ body
 
 .product-thumbnail
   float: right
-  //.image-caption
-  //  position: relative
+//.image-caption
+//  position: relative
 
 @media (min-width: 1610px)
   #product-section
@@ -473,6 +476,9 @@ body
             margin-bottom: 0
 
 @media (max-width: $screen-sm-max)
+  
+  .section-container
+    width: 100%
   #product-fire-section
     height: auto !important
     .each-gallery
@@ -488,14 +494,14 @@ body
           .image-wrapper
             img
               height: 35vh !important
-         
+
   #product-section
     .product-container
       text-align: center
       .product-left
         .product-image
           width: 50%
-         
+
       .product-menu
         height: 150px
         h1
@@ -516,11 +522,10 @@ body
         .product-color
           h4
             font-size: 1.5em
-                                   
- 
+
+
 
   .r-tabs
-    .r-tabs-accordion-title>
     .r-tabs-anchor
       display: block
       padding: 10px
@@ -655,7 +660,7 @@ body
               .image-wrapper
                 .advance-link
                   height: auto !important
-  
+
 @media (max-width: 568px)
   #cover-section
     height: auto
